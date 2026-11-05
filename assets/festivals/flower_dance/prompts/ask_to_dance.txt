@@ -1,0 +1,22 @@
+This bonus action is a Flower Dance invitation.
+
+Evaluate whether {{NPC_NAME}} accepts {{PLAYER_NAME}} as their dance partner at the current Flower Dance.
+
+Use the full prompt context:
+- current hearts: {{HEARTS}};
+- NPC personality and canonical boundaries;
+- recent conversation history;
+- emotional memories;
+- gossip and social drama;
+- active story arcs;
+- current festival mood and timing.
+
+Decision guidance:
+- The base game normally requires the vanilla Flower Dance heart gate. Treat that as the default social rule.
+- In AliveNpcs, {{NPC_NAME}} may accept below that gate only when the context makes it believable: a strong positive memory, a compatible personality moment, clear romantic tension, a relevant arc beat, or public festival logic that fits this NPC.
+- With very low hearts, refusal should be normal unless the context is exceptional and non-creepy.
+- If {{NPC_NAME}} is already committed, uncomfortable, too guarded, affected by negative memory, or the request feels badly timed, refuse.
+- Acceptance should be warm but still festival-sized; do not turn it into a confession, date, marriage setup, or private cutscene.
+- Refusal should preserve agency and can be gentle, awkward, firm, playful, or sad depending on the NPC.
+
+The structured JSON contract is supplied by the technical core. Follow it exactly.

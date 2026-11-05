@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "flower_dance",
+  "priority": 0,
+  "localizedNames": {
+    "default": "Flower Dance",
+    "pt-BR": "Dan\u00e7a das Flores",
+    "es": "Danza Floral",
+    "fr": "Danse des fleurs",
+    "it": "Danza dei Fiori",
+    "de": "Blumentanz",
+    "vi": "Vũ hội Hoa"
+  },
+  "detection": {
+    "season": "spring",
+    "day": 24,
+    "locations": [
+      "Forest",
+      "Temp"
+    ],
+    "eventNames": [
+      "Flower Dance",
+      "Dan\u00e7a das Flores",
+      "Festival das Flores",
+      "Danza Floral",
+      "Danse des fleurs",
+      "Danza dei Fiori",
+      "Blumentanz"
+    ]
+  },
+  "prompts": {
+    "main": "prompts/dialogue_system.txt",
+    "npcOverrides": {}
+  },
+  "gossip": {
+    "summary": {
+      "default": "The Flower Dance happened in Cindersap Forest, with the town gathered around spring music, flowers, and dance partners.",
+      "pt-BR": "A Dan\u00e7a das Flores aconteceu na Floresta Cinzaseiva, com a vila reunida em torno de m\u00fasica, flores e pares de dan\u00e7a.",
+      "es": "La Danza Floral ocurri\u00f3 en el bosque, con el pueblo reunido entre musica primaveral, flores y parejas de baile.",
+      "fr": "La Danse des fleurs a eu lieu dans la foret, avec le village reuni autour de la musique du printemps, des fleurs et des partenaires de danse.",
+      "it": "La Danza dei Fiori si e svolta nella foresta, con il paese riunito tra musica primaverile, fiori e partner di ballo.",
+      "de": "Der Blumentanz fand im Wald statt, und das Dorf versammelte sich zu Fruehlingsmusik, Blumen und Tanzpartnern.",
+      "vi": "Vũ hội Hoa đã diễn ra trong Rừng Cindersap, mọi người trong thị trấn tụ họp giữa âm nhạc mùa xuân, hoa và những cặp nhảy."
+    },
+    "chatMessage": {
+      "default": "Pelican Town is still talking about who danced at the Flower Dance.",
+      "pt-BR": "Pelican Town ainda esta comentando quem dan\u00e7ou na Dan\u00e7a das Flores.",
+      "es": "Pelican Town todavia habla de quienes bailaron en la Danza Floral.",
+      "fr": "Pelican Town parle encore de ceux qui ont danse a la Danse des fleurs.",
+      "it": "Pelican Town parla ancora di chi ha ballato alla Danza dei Fiori.",
+      "de": "Pelican Town spricht noch darueber, wer beim Blumentanz getanzt hat.",
+      "vi": "Thị trấn Pelican vẫn đang bàn tán xem ai đã khiêu vũ tại Vũ hội Hoa."
+    },
+    "promptEligibilityDays": 2
+  },
+  "bonusAction": {
+    "id": "ask_to_dance",
+    "localizedLabels": {
+      "default": "Ask to dance",
+      "pt-BR": "Chamar para dan\u00e7ar",
+      "es": "Invitar a bailar",
+      "fr": "Inviter a danser",
+      "it": "Invita a ballare",
+      "de": "Zum Tanz bitten",
+      "vi": "Mời khiêu vũ"
+    },
+    "localizedTooltips": {
+      "default": "Ask this NPC to be your Flower Dance partner.",
+      "pt-BR": "Chame este NPC para ser seu par na Dan\u00e7a das Flores.",
+      "es": "Invita a este NPC a ser tu pareja en la Danza Floral.",
+      "fr": "Demandez a ce PNJ d'etre votre partenaire pour la Danse des fleurs.",
+      "it": "Chiedi a questo PNG di essere il tuo partner per la Danza dei Fiori.",
+      "de": "Bitte diesen NPC, dein Partner beim Blumentanz zu sein.",
+      "vi": "Mời NPC này làm bạn nhảy của bạn tại Vũ hội Hoa."
+    },
+    "promptPath": "prompts/ask_to_dance.txt",
+    "maxPromptChars": 3600,
+    "recordConversation": false,
+    "resultContract": "flower_dance_invite_v1"
+  }
+}

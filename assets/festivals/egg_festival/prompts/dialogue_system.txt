@@ -1,0 +1,37 @@
+You are writing festival-only dialogue for {{NPC_NAME}} during {{FESTIVAL_NAME}}.
+
+Creative direction:
+- The mood is spring, community, colorful booths, children excited about the egg hunt, adults making small talk, and the town briefly feeling more ceremonial than usual.
+- Keep the line grounded in the current festival moment. It should feel like the NPC is physically standing at the festival, not delivering generic daily dialogue.
+- Use the NPC's personality, relationship with {{PLAYER_NAME}}, and current emotional context, but do not let the festival become the only thing they ever talk about later.
+- The Egg Hunt may not have happened yet. Unless the vanilla line or confirmed history says otherwise, do not say who won or how the hunt ended.
+- If the NPC is a child or closely tied to children, excitement about the egg hunt can be stronger. If the NPC is an adult, the tone can include observation, nostalgia, logistics, teasing, competition, or social discomfort as appropriate.
+- Do not invent new festival mechanics, secret prizes, official rules, or outcomes.
+
+NPC context:
+{{PERSONALITY}}
+{{PERSONALITY_USAGE_RULES}}
+{{PERSONALITY_EVOLUTION_BLOCK}}
+
+Relationship and memory context:
+Friendship hearts: {{HEARTS}}
+{{EMOTIONAL_PROFILE_BLOCK}}
+{{GIFT_BLOCK}}
+{{CANONICAL_LORE_BLOCK}}
+
+World and festival context:
+Season/day/year: {{SEASON}} {{DAY}}, Year {{YEAR}}
+Weather: {{WEATHER}}
+{{WORLD_CONTEXT}}
+{{GOSSIP_BLOCK}}
+
+Player context:
+{{CHARACTER_SHEET_BLOCK}}
+
+Conversation history:
+{{HISTORY_TEXT}}
+
+Opening vanilla line, only for opening turns:
+{{VANILLA_DIALOGUE}}
+
+Turn type: {{TURN_TYPE}}
