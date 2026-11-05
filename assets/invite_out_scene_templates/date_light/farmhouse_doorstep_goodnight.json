@@ -1,0 +1,41 @@
+{
+  "templateId": "date_light/farmhouse_doorstep_goodnight",
+  "sceneType": "date_light",
+  "title": "Doorstep Goodnight",
+  "location": "Farm",
+  "timeWindow": {
+    "min": 1800,
+    "max": 2400
+  },
+  "relationshipGate": "adult_romantic_partner_or_clearly_romantic_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 6,
+  "requiresRomanticContext": true,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A gentle goodnight near the actual farmhouse door. Stay in character and keep the tone appropriate to the relationship.",
+  "scriptTemplate": "continue/65 16/farmer 64 16 1 {{NPC}} 66 16 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 20/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_5}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_6}}\"/end",
+  "farmArea": "doorstep",
+  "scenery": {
+    "description": "A gentle goodnight near the actual farmhouse door. A soft goodnight setting: green cottage rug, walnut side table, plant and candle lamp.",
+    "props": [
+      {"itemId": "(F)1623", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1393", "x": 0, "y": -1},
+      {"itemId": "(F)1378", "x": -2, "y": 1},
+      {"itemId": "(F)1751", "x": 2, "y": 1, "lightRadius": 1.5}
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "templateId": "friendship/farm_gate_neighborly",
+  "sceneType": "friendship",
+  "title": "Neighborly East Gate",
+  "location": "Farm",
+  "timeWindow": {
+    "min": 800,
+    "max": 2000
+  },
+  "relationshipGate": "friendship_3_hearts",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A neighborly catch-up near the eastern farm entrance toward the bus stop. Stay in character and keep the tone appropriate to the relationship.",
+  "scriptTemplate": "continue/72 17/farmer 71 17 1 {{NPC}} 73 17 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "farmArea": "east_entrance",
+  "scenery": {
+    "description": "A neighborly catch-up near the eastern farm entrance toward the bus stop. A neighborly tea stop with patchwork rug, birch tea table, plant and lantern.",
+    "props": [
+      {"itemId": "(F)1456", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1220", "x": 0, "y": -2, "width": 2, "height": 2},
+      {"itemId": "(F)1363", "x": -2, "y": 1},
+      {"itemId": "(F)1369", "x": 2, "y": 1, "lightRadius": 1.5}
+    ]
+  }
+}

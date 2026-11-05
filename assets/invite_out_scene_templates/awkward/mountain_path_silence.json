@@ -1,0 +1,39 @@
+{
+  "templateId": "awkward/mountain_path_silence",
+  "sceneType": "awkward",
+  "title": "Mountain Path Silence",
+  "location": "Mountain",
+  "timeWindow": {
+    "min": 800,
+    "max": 1900
+  },
+  "relationshipGate": "friendship_3_hearts_boundary_safe",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A quiet mountain pause where the NPC admits the silence got odd. Keep the tone gentle, not dramatic.",
+  "scriptTemplate": "continue/40 20/farmer 39 20 1 {{NPC}} 41 20 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 16/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A sparse mountain rest spot with a woodcut mat, a small plant and a stump torch.",
+    "props": [
+      {"itemId": "(F)1777", "x": -1, "y": 0, "width": 2, "height": 2, "floor": true},
+      {"itemId": "(F)1362", "x": -2, "y": -1},
+      {"itemId": "(F)2398", "x": 2, "y": 1, "lightRadius": 1.5, "flame": true}
+    ]
+  }
+}

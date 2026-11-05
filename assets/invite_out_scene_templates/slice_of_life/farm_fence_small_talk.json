@@ -1,0 +1,41 @@
+{
+  "templateId": "slice_of_life/farm_fence_small_talk",
+  "sceneType": "slice_of_life",
+  "title": "Farm West Corner Small Talk",
+  "location": "Farm",
+  "timeWindow": {
+    "min": 700,
+    "max": 1900
+  },
+  "relationshipGate": "friendship_3_hearts",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "Casual conversation in the western part of the farm, away from the house. Stay in character and keep the tone appropriate to the relationship.",
+  "scriptTemplate": "continue/14 31/farmer 13 31 1 {{NPC}} 15 31 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "farmArea": "west_corner",
+  "scenery": {
+    "description": "Casual conversation in the western part of the farm, away from the house. A rustic western clearing stop, with a woodcut mat, stump torch and two potted plants.",
+    "props": [
+      {"itemId": "(F)1777", "x": -1, "y": 0, "width": 2, "height": 2, "floor": true},
+      {"itemId": "(F)2398", "x": -2, "y": 0, "lightRadius": 1.5, "flame": true},
+      {"itemId": "(F)1377", "x": 2, "y": 0},
+      {"itemId": "(F)1362", "x": 0, "y": -1}
+    ]
+  }
+}

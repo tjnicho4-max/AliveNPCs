@@ -1,0 +1,40 @@
+{
+  "templateId": "slice_of_life/farm_gate_goodnight",
+  "sceneType": "slice_of_life",
+  "title": "Goodnight by the South Gate",
+  "location": "Farm",
+  "timeWindow": {
+    "min": 1700,
+    "max": 2300
+  },
+  "relationshipGate": "friendship_3_hearts",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A brief goodnight near the southern farm exit toward the forest. Stay in character and keep the tone appropriate to the relationship.",
+  "scriptTemplate": "continue/40 57/farmer 39 57 1 {{NPC}} 41 57 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "farmArea": "south_entrance",
+  "scenery": {
+    "description": "A brief goodnight near the southern farm exit toward the forest. A simple nighttime gate pause with a bamboo mat, country lamp and leafy plant.",
+    "props": [
+      {"itemId": "(F)1755", "x": -1, "y": 0, "width": 2, "floor": true},
+      {"itemId": "(F)1443", "x": -2, "y": -1, "lightRadius": 1.5},
+      {"itemId": "(F)LeafyPlant", "x": 2, "y": 1}
+    ]
+  }
+}

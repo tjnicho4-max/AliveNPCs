@@ -1,0 +1,40 @@
+{
+  "templateId": "cozy/saloon_corner_chat",
+  "sceneType": "cozy",
+  "title": "Saloon Corner Chat",
+  "location": "Saloon",
+  "timeWindow": {
+    "min": 1600,
+    "max": 2400
+  },
+  "relationshipGate": "friendship_3_hearts_or_close_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "Warm and relaxed, a quiet conversation in the Saloon. It can be friendly or softly affectionate, but should not imply an official relationship change.",
+  "scriptTemplate": "continue/6 22/farmer 5 22 1 {{NPC}} 7 22 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A casual pub corner with patchwork rug, oak table, small plant and lantern.",
+    "props": [
+      {"itemId": "(F)1456", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1120", "x": 0, "y": -2, "width": 2, "height": 2},
+      {"itemId": "(F)1363", "x": -2, "y": 1},
+      {"itemId": "(F)1369", "x": 2, "y": 1, "lightRadius": 1.5}
+    ]
+  }
+}

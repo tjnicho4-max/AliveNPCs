@@ -1,0 +1,61 @@
+{
+  "templateId": "cozy/spa_tea_break",
+  "sceneType": "cozy",
+  "title": "Spa Tea Break",
+  "location": "BathHouse_Pool",
+  "timeWindow": {
+    "min": 900,
+    "max": 2000
+  },
+  "relationshipGate": "friendship_3_hearts_or_close_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A restful tea break on the dry western poolside deck of the spa. Talk about slowing down after a busy day, with simple companionship and the sound of water. Both characters remain on the deck; do not describe swimming, changing clothes, treatments, or actions absent from the scene.",
+  "scriptTemplate": "continue/4 6/farmer 3 6 1 {{NPC}} 5 6 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A western tea corner with a bamboo mat, birch tea table, small house plant and a soft country lamp.",
+    "props": [
+      {
+        "itemId": "(F)1755",
+        "x": -1,
+        "y": 0,
+        "width": 2,
+        "floor": true
+      },
+      {
+        "itemId": "(F)1220",
+        "x": -1,
+        "y": -2,
+        "width": 2,
+        "height": 2
+      },
+      {
+        "itemId": "(F)1376",
+        "x": -2,
+        "y": -1
+      },
+      {
+        "itemId": "(F)1443",
+        "x": 2,
+        "y": -1,
+        "lightRadius": 1.2
+      }
+    ]
+  }
+}

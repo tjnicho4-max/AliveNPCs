@@ -1,0 +1,39 @@
+{
+  "templateId": "slice_of_life/beach_tide_check",
+  "sceneType": "slice_of_life",
+  "title": "Beach Tide Check",
+  "location": "Beach",
+  "timeWindow": {
+    "min": 900,
+    "max": 2100
+  },
+  "relationshipGate": "friendship_3_hearts",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "Everyday beach time. The NPC notices tide, weather, or routine and treats the invitation as a small break.",
+  "scriptTemplate": "continue/28 12/farmer 27 12 1 {{NPC}} 29 12 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A tide-watching stop with two different shells and one lantern, leaving the sand open.",
+    "props": [
+      {"itemId": "(O)372", "x": -2, "y": -1},
+      {"itemId": "(F)1369", "x": 2, "y": 1, "lightRadius": 1.5},
+      {"itemId": "(O)393", "x": 0, "y": -1}
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "templateId": "spouse_hot/farmhouse_private_evening",
+  "sceneType": "spouse_hot",
+  "title": "Farmhouse Private Evening",
+  "location": "FarmHouse",
+  "timeWindow": {
+    "min": 2100,
+    "max": 2500
+  },
+  "relationshipGate": "current_adult_romantic_spouse_with_hot_opt_in",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 12,
+  "requiresRomanticContext": true,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "An adult, consensual, non-graphic private evening with the current spouse. Use romantic tension and clear mutual comfort without explicit sexual detail.",
+  "scriptTemplate": "continue/7 7/farmer 6 7 2 {{NPC}} 8 7 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 300/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 20/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 300/speak {{NPC}} \"{{NPC_LINE_4}}\"/pause 300/speak {{NPC}} \"{{NPC_LINE_5}}\"/end",
+  "scenery": {
+    "description": "A private evening setting with a dark rug, walnut side table, two candle lamps and a red cushion.",
+    "props": [
+      {"itemId": "(F)1461", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1393", "x": 0, "y": -1},
+      {"itemId": "(F)1751", "x": -2, "y": 1, "lightRadius": 1.5},
+      {"itemId": "(F)1751", "x": 2, "y": 1, "lightRadius": 1.5},
+      {"itemId": "(F)RedCushion", "x": 0, "y": 2, "floor": true}
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "templateId": "cozy/saloon_back_table_breath",
+  "sceneType": "cozy",
+  "title": "Saloon Back Table Breath",
+  "location": "Saloon",
+  "timeWindow": {
+    "min": 1600,
+    "max": 2400
+  },
+  "relationshipGate": "friendship_3_hearts_or_close_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A quiet breath at a Saloon table. Keep it warm, conversational, and short.",
+  "scriptTemplate": "continue/6 22/farmer 5 22 1 {{NPC}} 7 22 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A quiet back-table corner with a dark rug, walnut tea table and country lamp.",
+    "props": [
+      {"itemId": "(F)1461", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1218", "x": -1, "y": -2, "width": 2, "height": 2},
+      {"itemId": "(F)1376", "x": -2, "y": 0},
+      {"itemId": "(F)1443", "x": 2, "y": -1, "lightRadius": 1.5}
+    ]
+  }
+}

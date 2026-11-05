@@ -1,0 +1,41 @@
+{
+  "templateId": "spouse_love/farmhouse_evening_checkin",
+  "sceneType": "spouse_love",
+  "title": "Farmhouse Evening Check-in",
+  "location": "FarmHouse",
+  "timeWindow": {
+    "min": 1800,
+    "max": 2400
+  },
+  "relationshipGate": "current_adult_romantic_spouse",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 10,
+  "requiresRomanticContext": true,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A warm, private evening with the current adult spouse. Keep the affection specific, mutual, and non-graphic.",
+  "scriptTemplate": "continue/7 7/farmer 6 7 2 {{NPC}} 8 7 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_5}}\"/end",
+  "scenery": {
+    "description": "A shared evening corner with a green cottage rug, mahogany side table, leafy plant and candle lamp.",
+    "props": [
+      {"itemId": "(F)1623", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1397", "x": -1, "y": -1},
+      {"itemId": "(F)LeafyPlant", "x": -2, "y": -1},
+      {"itemId": "(F)1751", "x": 2, "y": -1, "lightRadius": 1.5},
+      {"itemId": "(F)RedCushion", "x": 0, "y": 2, "floor": true}
+    ]
+  }
+}

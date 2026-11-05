@@ -1,0 +1,39 @@
+{
+  "templateId": "walk/beach_pier_turn",
+  "sceneType": "walk",
+  "title": "Beach Pier Turn",
+  "location": "Beach",
+  "timeWindow": {
+    "min": 900,
+    "max": 2200
+  },
+  "relationshipGate": "friendship_3_hearts",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A short turn along the pier. Calm and natural; do not make it romantic unless the relationship already supports that tone.",
+  "scriptTemplate": "continue/39 34/farmer 38 34 1 {{NPC}} 40 34 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A simple turn on the pier with a green cushion, a lantern and a clam.",
+    "props": [
+      {"itemId": "(F)GreenCushion", "x": -1, "y": 1, "floor": true},
+      {"itemId": "(F)1369", "x": 0, "y": 1, "lightRadius": 1.5},
+      {"itemId": "(O)372", "x": 1, "y": 1}
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "templateId": "walk/museum_steps_stroll",
+  "sceneType": "walk",
+  "title": "Museum Steps Stroll",
+  "location": "ArchaeologyHouse",
+  "timeWindow": {
+    "min": 900,
+    "max": 1800
+  },
+  "relationshipGate": "friendship_3_hearts",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A tiny stroll around the museum or library area. Quiet, friendly, and character-specific.",
+  "scriptTemplate": "continue/13 12/farmer 12 12 1 {{NPC}} 14 12 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A light museum stopping point with a globe, potted plant and purple book.",
+    "props": [
+      {"itemId": "(F)1366", "x": -2, "y": 0},
+      {"itemId": "(F)1378", "x": 2, "y": 0},
+      {"itemId": "(F)PurpleBook", "x": 0, "y": -1}
+    ]
+  }
+}

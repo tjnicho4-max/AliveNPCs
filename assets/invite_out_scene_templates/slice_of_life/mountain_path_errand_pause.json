@@ -1,0 +1,39 @@
+{
+  "templateId": "slice_of_life/mountain_path_errand_pause",
+  "sceneType": "slice_of_life",
+  "title": "Mountain Path Errand Pause",
+  "location": "Mountain",
+  "timeWindow": {
+    "min": 800,
+    "max": 1900
+  },
+  "relationshipGate": "friendship_3_hearts",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "An everyday errand pause in the mountains. The outing should feel like a normal day made a little better.",
+  "scriptTemplate": "continue/40 20/farmer 39 20 1 {{NPC}} 41 20 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A short trail stop with a walnut side table, a small plant and a country lamp.",
+    "props": [
+      {"itemId": "(F)1393", "x": 0, "y": -1},
+      {"itemId": "(F)1362", "x": -2, "y": 1},
+      {"itemId": "(F)1443", "x": 2, "y": 1, "lightRadius": 1.5}
+    ]
+  }
+}

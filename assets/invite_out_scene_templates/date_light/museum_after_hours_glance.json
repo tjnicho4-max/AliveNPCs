@@ -1,0 +1,40 @@
+{
+  "templateId": "date_light/museum_after_hours_glance",
+  "sceneType": "date_light",
+  "title": "Museum Late Glance",
+  "location": "ArchaeologyHouse",
+  "timeWindow": {
+    "min": 1500,
+    "max": 1800
+  },
+  "relationshipGate": "adult_romantic_partner_or_clearly_romantic_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 6,
+  "requiresRomanticContext": true,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A restrained romantic moment among quiet displays. Keep it subtle and appropriate for a public museum/library setting.",
+  "scriptTemplate": "continue/13 12/farmer 12 12 1 {{NPC}} 14 12 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 20/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_5}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_6}}\"/end",
+  "scenery": {
+    "description": "A soft after-hours corner with red rug, mahogany side table, red book and classic lamp.",
+    "props": [
+      {"itemId": "(F)1451", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1397", "x": 0, "y": -1},
+      {"itemId": "(F)RedBook", "x": -2, "y": 1},
+      {"itemId": "(F)1449", "x": 2, "y": 1, "lightRadius": 1.5}
+    ]
+  }
+}

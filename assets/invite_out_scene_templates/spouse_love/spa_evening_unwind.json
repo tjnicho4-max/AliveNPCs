@@ -1,0 +1,68 @@
+{
+  "templateId": "spouse_love/spa_evening_unwind",
+  "sceneType": "spouse_love",
+  "title": "Spa Evening Unwind",
+  "location": "BathHouse_Pool",
+  "timeWindow": {
+    "min": 1800,
+    "max": 2200
+  },
+  "relationshipGate": "current_adult_romantic_spouse",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 10,
+  "requiresRomanticContext": true,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "An affectionate evening pause with the current adult spouse on the far eastern dry deck beside the spa pool. Reflect on a shared day and enjoying time away from chores. Keep it mutual and non-graphic. Both characters stay on the deck; do not invent swimming, changing clothes, massages, or exclusive access to the public spa.",
+  "scriptTemplate": "continue/23 6/farmer 22 6 1 {{NPC}} 24 6 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_5}}\"/end",
+  "scenery": {
+    "description": "An evening corner with a green cottage rug, mahogany tea table, leafy plant, lantern and red cushion.",
+    "props": [
+      {
+        "itemId": "(F)1623",
+        "x": -1,
+        "y": 0,
+        "width": 3,
+        "height": 2,
+        "floor": true
+      },
+      {
+        "itemId": "(F)1222",
+        "x": -1,
+        "y": -2,
+        "width": 2,
+        "height": 2
+      },
+      {
+        "itemId": "(F)LeafyPlant",
+        "x": 2,
+        "y": -1
+      },
+      {
+        "itemId": "(F)1369",
+        "x": -2,
+        "y": -1,
+        "lightRadius": 1.6
+      },
+      {
+        "itemId": "(F)RedCushion",
+        "x": 0,
+        "y": 1,
+        "floor": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "templateId": "awkward/museum_quiet_fumble",
+  "sceneType": "awkward",
+  "title": "Quiet Museum Fumble",
+  "location": "ArchaeologyHouse",
+  "timeWindow": {
+    "min": 900,
+    "max": 1800
+  },
+  "relationshipGate": "friendship_3_hearts_boundary_safe",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A library or museum quiet-talk that stumbles over itself. The NPC should recover with warmth and avoid forced romance.",
+  "scriptTemplate": "continue/13 12/farmer 12 12 1 {{NPC}} 14 12 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 16/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "An uneven reading nook with a birch side table, a fallen blue book and a small plant.",
+    "props": [
+      {"itemId": "(F)1395", "x": -1, "y": -1},
+      {"itemId": "(F)FallenBlueBook", "x": -2, "y": -1},
+      {"itemId": "(F)1362", "x": 2, "y": -1}
+    ]
+  }
+}

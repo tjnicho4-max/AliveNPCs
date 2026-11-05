@@ -1,0 +1,39 @@
+{
+  "templateId": "awkward/town_clock_wrong_time",
+  "sceneType": "awkward",
+  "title": "Wrong Time by the Town Clock",
+  "location": "Town",
+  "timeWindow": {
+    "min": 900,
+    "max": 2000
+  },
+  "relationshipGate": "friendship_3_hearts_boundary_safe",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A short outing where timing or expectations were slightly off. The NPC should keep the acceptance polite and grounded.",
+  "scriptTemplate": "continue/45 74/farmer 44 74 1 {{NPC}} 46 74 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 16/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A quick clock-side pause with a walnut side table, globe and box lamp.",
+    "props": [
+      {"itemId": "(F)1393", "x": -1, "y": -1},
+      {"itemId": "(F)1366", "x": -2, "y": -1},
+      {"itemId": "(F)1445", "x": 2, "y": -1, "lightRadius": 1.5}
+    ]
+  }
+}

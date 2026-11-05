@@ -1,0 +1,40 @@
+{
+  "templateId": "friendship/mountain_lake_catchup",
+  "sceneType": "friendship",
+  "title": "Mountain Lake Catch-up",
+  "location": "Mountain",
+  "timeWindow": {
+    "min": 800,
+    "max": 1900
+  },
+  "relationshipGate": "friendship_3_hearts",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A friendly catch-up near the mountain lake. Ground the lines in shared time, not flirtation.",
+  "scriptTemplate": "continue/40 20/farmer 39 20 1 {{NPC}} 41 20 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A green picnic setting with a birch tea table, a leafy plant and a lantern.",
+    "props": [
+      {"itemId": "(F)1623", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1220", "x": 0, "y": -2, "width": 2, "height": 2},
+      {"itemId": "(F)LeafyPlant", "x": -2, "y": 1},
+      {"itemId": "(F)1369", "x": 2, "y": 1, "lightRadius": 1.5}
+    ]
+  }
+}

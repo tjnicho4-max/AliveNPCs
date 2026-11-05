@@ -1,0 +1,41 @@
+{
+  "templateId": "cozy/farm_porchefternoon_chat",
+  "sceneType": "cozy",
+  "title": "Farm Afternoon Picnic",
+  "location": "Farm",
+  "timeWindow": {
+    "min": 1200,
+    "max": 2100
+  },
+  "relationshipGate": "friendship_3_hearts_or_close_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A cozy afternoon picnic in an open patch of the farm, away from the front porch. Stay in character and keep the tone appropriate to the relationship.",
+  "scriptTemplate": "continue/52 24/farmer 51 24 1 {{NPC}} 53 24 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "farmArea": "picnic",
+  "scenery": {
+    "description": "A cozy afternoon picnic in an open patch of the farm, away from the front porch. An afternoon picnic setting with a red cottage rug, oak tea table, leafy plant and country lamp.",
+    "props": [
+      {"itemId": "(F)1618", "x": -1, "y": 0, "width": 3, "height": 2, "floor": true},
+      {"itemId": "(F)1216", "x": -1, "y": -2, "width": 2, "height": 2},
+      {"itemId": "(F)LeafyPlant", "x": -2, "y": -1},
+      {"itemId": "(F)1443", "x": 2, "y": -1, "lightRadius": 1.5}
+    ]
+  }
+}

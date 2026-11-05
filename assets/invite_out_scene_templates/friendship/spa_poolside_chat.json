@@ -1,0 +1,60 @@
+{
+  "templateId": "friendship/spa_poolside_chat",
+  "sceneType": "friendship",
+  "title": "Spa Poolside Catch-up",
+  "location": "BathHouse_Pool",
+  "timeWindow": {
+    "min": 900,
+    "max": 2000
+  },
+  "relationshipGate": "friendship_3_hearts_or_close_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "An easy platonic catch-up on the dry deck near the western side of the spa pool. Let the NPC share a small everyday observation while enjoying the quiet. Both characters stay out of the water; no swimming, changing clothes, spa staff, or medical claims.",
+  "scriptTemplate": "continue/10 6/farmer 9 6 1 {{NPC}} 11 6 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A casual poolside rest stop with an oceanic rug, walnut side table, table plant and a green cushion.",
+    "props": [
+      {
+        "itemId": "(F)1228",
+        "x": -1,
+        "y": 0,
+        "width": 3,
+        "height": 2,
+        "floor": true
+      },
+      {
+        "itemId": "(F)1393",
+        "x": 2,
+        "y": -1
+      },
+      {
+        "itemId": "(F)1363",
+        "x": -2,
+        "y": -1
+      },
+      {
+        "itemId": "(F)GreenCushion",
+        "x": 0,
+        "y": 1,
+        "floor": true
+      }
+    ]
+  }
+}

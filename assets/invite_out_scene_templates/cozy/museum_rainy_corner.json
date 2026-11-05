@@ -1,0 +1,40 @@
+{
+  "templateId": "cozy/museum_rainy_corner",
+  "sceneType": "cozy",
+  "title": "Museum Rainy Corner",
+  "location": "ArchaeologyHouse",
+  "timeWindow": {
+    "min": 900,
+    "max": 1800
+  },
+  "relationshipGate": "friendship_3_hearts_or_close_context",
+  "blockedForChildCodedNpcs": true,
+  "minHearts": 3,
+  "requiresRomanticContext": false,
+  "wildcards": [
+    "INVITE_ID",
+    "NPC",
+    "FARMER",
+    "PLAYER_INVITE",
+    "NPC_ACCEPTANCE_LINE",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "NPC_LINE_3",
+    "NPC_LINE_4",
+    "NPC_LINE_5",
+    "NPC_LINE_6",
+    "MEMORY_REFERENCE",
+    "SCENE_TONE"
+  ],
+  "llmLineInstructions": "A sheltered museum corner. The NPC should sound comfortable sharing a quiet minute away from the weather or town noise.",
+  "scriptTemplate": "continue/13 12/farmer 12 12 1 {{NPC}} 14 12 3/skippable/AliveNpcsInviteOutSceneComplete {{INVITE_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_3}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_4}}\"/end",
+  "scenery": {
+    "description": "A rainy-day reading corner with a burlap mat, walnut tea table, plant and blue book.",
+    "props": [
+      {"itemId": "(F)1742", "x": -1, "y": 0, "width": 2, "height": 2, "floor": true},
+      {"itemId": "(F)1218", "x": 0, "y": -2, "width": 2, "height": 2},
+      {"itemId": "(F)1379", "x": -2, "y": 1},
+      {"itemId": "(F)BlueBook", "x": 2, "y": 1}
+    ]
+  }
+}
