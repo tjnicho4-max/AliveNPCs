@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.gus_pam_saloon_empty_mug",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.gus_pam_saloon_empty_mug.title",
+  "location": "Saloon",
+  "eventKey": "9702207",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Gus": 0,
+      "Pam": 0
+    },
+    "chance": 0.55,
+    "maxHearts": {
+      "Gus": 0,
+      "Pam": 0
+    }
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.gus_pam_saloon_empty_mug.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

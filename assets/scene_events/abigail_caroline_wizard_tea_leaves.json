@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.abigail_caroline_wizard_tea_leaves",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.abigail_caroline_wizard_tea_leaves.title",
+  "location": "Forest",
+  "eventKey": "9702282",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Abigail": 8,
+      "Caroline": 8,
+      "Wizard": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.abigail_caroline_wizard_tea_leaves.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.abigail_caroline_wizard_tea_leaves.memoryText"
+  }
+}

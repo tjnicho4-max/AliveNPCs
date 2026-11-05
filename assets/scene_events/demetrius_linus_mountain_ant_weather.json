@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.demetrius_linus_mountain_ant_weather",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.demetrius_linus_mountain_ant_weather.title",
+  "location": "Mountain",
+  "eventKey": "9702247",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Demetrius": 4,
+      "Linus": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.demetrius_linus_mountain_ant_weather.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.demetrius_linus_mountain_ant_weather.memoryText"
+  }
+}

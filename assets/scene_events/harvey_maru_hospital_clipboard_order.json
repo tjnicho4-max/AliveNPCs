@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.harvey_maru_hospital_clipboard_order",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.harvey_maru_hospital_clipboard_order.title",
+  "location": "Hospital",
+  "eventKey": "9702238",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Harvey": 3,
+      "Maru": 3
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 43
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.harvey_maru_hospital_clipboard_order.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

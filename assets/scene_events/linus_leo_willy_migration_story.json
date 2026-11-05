@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.linus_leo_willy_migration_story",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.linus_leo_willy_migration_story.title",
+  "location": "Beach",
+  "eventKey": "9702289",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Linus": 8,
+      "Leo": 8,
+      "Willy": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.linus_leo_willy_migration_story.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.linus_leo_willy_migration_story.memoryText"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.haley.beach_summer_light",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.haley.beach_summer_light.title",
+  "location": "Beach",
+  "eventKey": "9702104",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "summer"
+    ],
+    "weather": [
+      "Sunny"
+    ],
+    "minHearts": {
+      "Haley": 2
+    },
+    "chance": 0.65
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.haley.beach_summer_light.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.haley.beach_summer_light.memoryText"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.alex.town_training_count",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.alex.town_training_count.title",
+  "location": "Town",
+  "eventKey": "9702106",
+  "weight": 90,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "weather": [
+      "Sunny"
+    ],
+    "minHearts": {
+      "Alex": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 1500
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.alex.town_training_count.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

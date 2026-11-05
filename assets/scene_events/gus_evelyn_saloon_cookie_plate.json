@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.gus_evelyn_saloon_cookie_plate",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.gus_evelyn_saloon_cookie_plate.title",
+  "location": "Saloon",
+  "eventKey": "9702226",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Gus": 2,
+      "Evelyn": 2
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 31
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.gus_evelyn_saloon_cookie_plate.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

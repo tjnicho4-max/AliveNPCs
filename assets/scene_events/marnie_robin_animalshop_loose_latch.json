@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.marnie_robin_animalshop_loose_latch",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.marnie_robin_animalshop_loose_latch.title",
+  "location": "AnimalShop",
+  "eventKey": "9702208",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Marnie": 0,
+      "Robin": 0
+    },
+    "chance": 0.55,
+    "maxHearts": {
+      "Marnie": 0,
+      "Robin": 0
+    }
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.marnie_robin_animalshop_loose_latch.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

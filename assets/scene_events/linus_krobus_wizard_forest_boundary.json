@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.linus_krobus_wizard_forest_boundary",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.linus_krobus_wizard_forest_boundary.title",
+  "location": "Forest",
+  "eventKey": "9702272",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Linus": 7,
+      "Krobus": 7,
+      "Wizard": 7
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 91
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.linus_krobus_wizard_forest_boundary.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.linus_krobus_wizard_forest_boundary.memoryText"
+  }
+}

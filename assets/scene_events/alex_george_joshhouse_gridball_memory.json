@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.alex_george_joshhouse_gridball_memory",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.alex_george_joshhouse_gridball_memory.title",
+  "location": "JoshHouse",
+  "eventKey": "9702268",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Alex": 6,
+      "George": 6
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 79
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.alex_george_joshhouse_gridball_memory.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.alex_george_joshhouse_gridball_memory.memoryText"
+  }
+}

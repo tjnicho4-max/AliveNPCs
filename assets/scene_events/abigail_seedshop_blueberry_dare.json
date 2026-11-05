@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.abigail.seedshop_blueberry_dare",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.abigail.seedshop_blueberry_dare.title",
+  "location": "SeedShop",
+  "eventKey": "9702130",
+  "weight": 90,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "summer"
+    ],
+    "minHearts": {
+      "Abigail": 1
+    },
+    "chance": 0.65
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.abigail.seedshop_blueberry_dare.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.haley_alex_beach_sunscreen",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.haley_alex_beach_sunscreen.title",
+  "location": "Beach",
+  "eventKey": "9702259",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Haley": 5,
+      "Alex": 5
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 67
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.haley_alex_beach_sunscreen.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.haley_alex_beach_sunscreen.memoryText"
+  }
+}

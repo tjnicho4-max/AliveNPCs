@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.evelyn.town_seed_packet",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.evelyn.town_seed_packet.title",
+  "location": "Town",
+  "eventKey": "9702126",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "minHearts": {
+      "Evelyn": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.evelyn.town_seed_packet.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.evelyn.town_seed_packet.memoryText"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.maru.sciencehouse_star_chart",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.maru.sciencehouse_star_chart.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702107",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Maru": 3
+    },
+    "minDaysPlayed": 20,
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1800,
+      "max": 2300
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.maru.sciencehouse_star_chart.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.maru.sciencehouse_star_chart.memoryText"
+  }
+}

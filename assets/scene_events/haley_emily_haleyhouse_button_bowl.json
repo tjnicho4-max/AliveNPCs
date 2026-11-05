@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.haley_emily_haleyhouse_button_bowl",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.haley_emily_haleyhouse_button_bowl.title",
+  "location": "HaleyHouse",
+  "eventKey": "9702206",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Haley": 0,
+      "Emily": 0
+    },
+    "chance": 0.55,
+    "maxHearts": {
+      "Haley": 0,
+      "Emily": 0
+    }
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.haley_emily_haleyhouse_button_bowl.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

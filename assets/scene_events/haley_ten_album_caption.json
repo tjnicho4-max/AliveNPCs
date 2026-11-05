@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.haley_ten_album_caption",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.haley_ten_album_caption.title",
+  "location": "HaleyHouse",
+  "eventKey": "9702297",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Haley": 10
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 127
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.haley_ten_album_caption.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.haley_ten_album_caption.memoryText"
+  }
+}

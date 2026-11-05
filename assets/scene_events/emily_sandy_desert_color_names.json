@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.emily_sandy_desert_color_names",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.emily_sandy_desert_color_names.title",
+  "location": "Desert",
+  "eventKey": "9702249",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Emily": 4,
+      "Sandy": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.emily_sandy_desert_color_names.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.emily_sandy_desert_color_names.memoryText"
+  }
+}

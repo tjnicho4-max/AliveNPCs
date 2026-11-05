@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.linus.mountain_kindling",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.linus.mountain_kindling.title",
+  "location": "Mountain",
+  "eventKey": "9702119",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Linus": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.linus.mountain_kindling.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.linus.mountain_kindling.memoryText"
+  }
+}

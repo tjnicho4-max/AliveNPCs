@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.george.joshhouse_remote",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.george.joshhouse_remote.title",
+  "location": "JoshHouse",
+  "eventKey": "9702127",
+  "weight": 95,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "George": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.george.joshhouse_remote.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

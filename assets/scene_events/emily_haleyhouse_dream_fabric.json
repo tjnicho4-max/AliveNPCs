@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.emily.haleyhouse_dream_fabric",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.emily.haleyhouse_dream_fabric.title",
+  "location": "HaleyHouse",
+  "eventKey": "9702134",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Emily": 3
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.emily.haleyhouse_dream_fabric.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

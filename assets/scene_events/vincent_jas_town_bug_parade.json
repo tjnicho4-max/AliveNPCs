@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.vincent_jas.town_bug_parade",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.vincent_jas.town_bug_parade.title",
+  "location": "Town",
+  "eventKey": "9702125",
+  "weight": 95,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "weather": [
+      "Sunny"
+    ],
+    "minHearts": {
+      "Vincent": 1,
+      "Jas": 1
+    },
+    "chance": 0.7
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1500
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.vincent_jas.town_bug_parade.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

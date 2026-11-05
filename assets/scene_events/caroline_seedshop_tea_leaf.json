@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.caroline.seedshop_tea_leaf",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.caroline.seedshop_tea_leaf.title",
+  "location": "SeedShop",
+  "eventKey": "9702113",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "minHearts": {
+      "Caroline": 2
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.caroline.seedshop_tea_leaf.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.caroline.seedshop_tea_leaf.memoryText"
+  }
+}

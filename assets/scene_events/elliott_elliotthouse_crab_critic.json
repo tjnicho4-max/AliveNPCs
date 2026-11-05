@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.elliott.elliotthouse_crab_critic",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.elliott.elliotthouse_crab_critic.title",
+  "location": "ElliottHouse",
+  "eventKey": "9702139",
+  "weight": 95,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Elliott": 1
+    },
+    "chance": 0.65
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1000,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.elliott.elliotthouse_crab_critic.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

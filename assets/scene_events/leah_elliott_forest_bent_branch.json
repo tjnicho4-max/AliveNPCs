@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.leah_elliott_forest_bent_branch",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.leah_elliott_forest_bent_branch.title",
+  "location": "Forest",
+  "eventKey": "9702227",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Leah": 2,
+      "Elliott": 2
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 31
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.leah_elliott_forest_bent_branch.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

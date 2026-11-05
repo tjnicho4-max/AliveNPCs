@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.emily_sandy_desert_postcard_thread",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.emily_sandy_desert_postcard_thread.title",
+  "location": "Desert",
+  "eventKey": "9702219",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Emily": 1,
+      "Sandy": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.emily_sandy_desert_postcard_thread.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

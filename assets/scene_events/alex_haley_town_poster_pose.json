@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.alex_haley_town_poster_pose",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.alex_haley_town_poster_pose.title",
+  "location": "Town",
+  "eventKey": "9702233",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Alex": 3,
+      "Haley": 3
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 43
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.alex_haley_town_poster_pose.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

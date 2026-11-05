@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.abigail.mine_drumbeat",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.abigail.mine_drumbeat.title",
+  "location": "Mine",
+  "eventKey": "9702101",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Abigail": 2
+    },
+    "minDaysPlayed": 12,
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1000,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.abigail.mine_drumbeat.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.abigail.mine_drumbeat.memoryText"
+  }
+}

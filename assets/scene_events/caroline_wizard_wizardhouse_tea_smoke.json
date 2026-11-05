@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.caroline_wizard_wizardhouse_tea_smoke",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.caroline_wizard_wizardhouse_tea_smoke.title",
+  "location": "WizardHouse",
+  "eventKey": "9702265",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Caroline": 6,
+      "Wizard": 6
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 79
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 2200
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.caroline_wizard_wizardhouse_tea_smoke.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.caroline_wizard_wizardhouse_tea_smoke.memoryText"
+  }
+}

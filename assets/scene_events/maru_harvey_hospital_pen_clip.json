@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.maru_harvey_hospital_pen_clip",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.maru_harvey_hospital_pen_clip.title",
+  "location": "Hospital",
+  "eventKey": "9702214",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Maru": 1,
+      "Harvey": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.maru_harvey_hospital_pen_clip.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

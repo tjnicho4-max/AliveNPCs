@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.emily.saloon_thread",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.emily.saloon_thread.title",
+  "location": "Saloon",
+  "eventKey": "9702105",
+  "weight": 85,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Emily": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1600,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.emily.saloon_thread.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

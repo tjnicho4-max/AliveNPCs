@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.leah_linus_forest_bowl_repair",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.leah_linus_forest_bowl_repair.title",
+  "location": "Forest",
+  "eventKey": "9702294",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Leah": 9,
+      "Linus": 9
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 115
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.leah_linus_forest_bowl_repair.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.leah_linus_forest_bowl_repair.memoryText"
+  }
+}

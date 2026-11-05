@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.leah.forest_fallen_branch",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.leah.forest_fallen_branch.title",
+  "location": "Forest",
+  "eventKey": "9702109",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "spring",
+      "fall"
+    ],
+    "minHearts": {
+      "Leah": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.leah.forest_fallen_branch.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.leah.forest_fallen_branch.memoryText"
+  }
+}

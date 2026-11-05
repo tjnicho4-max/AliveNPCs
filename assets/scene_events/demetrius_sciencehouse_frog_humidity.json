@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.demetrius.sciencehouse_frog_humidity",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.demetrius.sciencehouse_frog_humidity.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702147",
+  "weight": 85,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "weather": [
+      "Rainy",
+      "Stormy"
+    ],
+    "minHearts": {
+      "Demetrius": 1
+    },
+    "chance": 0.65
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.demetrius.sciencehouse_frog_humidity.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

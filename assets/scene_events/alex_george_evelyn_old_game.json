@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.alex_george_evelyn_old_game",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.alex_george_evelyn_old_game.title",
+  "location": "JoshHouse",
+  "eventKey": "9702285",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Alex": 8,
+      "George": 8,
+      "Evelyn": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.alex_george_evelyn_old_game.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.alex_george_evelyn_old_game.memoryText"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.leah_robin_forest_old_fence",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.leah_robin_forest_old_fence.title",
+  "location": "Forest",
+  "eventKey": "9702262",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Leah": 6,
+      "Robin": 6
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 79
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.leah_robin_forest_old_fence.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.leah_robin_forest_old_fence.memoryText"
+  }
+}

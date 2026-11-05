@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.clint_robin_blacksmith_quiet_hinges",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.clint_robin_blacksmith_quiet_hinges.title",
+  "location": "Blacksmith",
+  "eventKey": "9702248",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Clint": 4,
+      "Robin": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.clint_robin_blacksmith_quiet_hinges.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.clint_robin_blacksmith_quiet_hinges.memoryText"
+  }
+}

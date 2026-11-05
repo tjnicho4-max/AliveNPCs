@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.harvey.town_checkup_walk",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.harvey.town_checkup_walk.title",
+  "location": "Town",
+  "eventKey": "9702141",
+  "weight": 85,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "weather": [
+      "Sunny"
+    ],
+    "minHearts": {
+      "Harvey": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.harvey.town_checkup_walk.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.caroline.town_yoga_notice",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.caroline.town_yoga_notice.title",
+  "location": "Town",
+  "eventKey": "9702142",
+  "weight": 85,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "weather": [
+      "Sunny"
+    ],
+    "minHearts": {
+      "Caroline": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.caroline.town_yoga_notice.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

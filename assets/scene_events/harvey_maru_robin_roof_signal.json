@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.harvey_maru_robin_roof_signal",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.harvey_maru_robin_roof_signal.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702295",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Harvey": 9,
+      "Maru": 9,
+      "Robin": 9
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 115
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.harvey_maru_robin_roof_signal.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.harvey_maru_robin_roof_signal.memoryText"
+  }
+}

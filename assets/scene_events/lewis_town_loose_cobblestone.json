@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.lewis.town_loose_cobblestone",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.lewis.town_loose_cobblestone.title",
+  "location": "Town",
+  "eventKey": "9702145",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Lewis": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.lewis.town_loose_cobblestone.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.lewis.town_loose_cobblestone.memoryText"
+  }
+}

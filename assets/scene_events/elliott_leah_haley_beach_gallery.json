@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.elliott_leah_haley_beach_gallery",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.elliott_leah_haley_beach_gallery.title",
+  "location": "Beach",
+  "eventKey": "9702286",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Elliott": 8,
+      "Leah": 8,
+      "Haley": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.elliott_leah_haley_beach_gallery.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.elliott_leah_haley_beach_gallery.memoryText"
+  }
+}

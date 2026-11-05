@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.harvey.hospital_radio_static",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.harvey.hospital_radio_static.title",
+  "location": "Hospital",
+  "eventKey": "9702112",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Harvey": 2
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1500
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.harvey.hospital_radio_static.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.harvey.hospital_radio_static.memoryText"
+  }
+}

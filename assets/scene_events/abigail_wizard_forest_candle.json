@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.abigail_wizard_forest_candle",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.abigail_wizard_forest_candle.title",
+  "location": "Forest",
+  "eventKey": "9702257",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Abigail": 5,
+      "Wizard": 5
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 67
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.abigail_wizard_forest_candle.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.abigail_wizard_forest_candle.memoryText"
+  }
+}

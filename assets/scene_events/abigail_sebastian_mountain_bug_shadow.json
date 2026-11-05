@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.abigail_sebastian_mountain_bug_shadow",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.abigail_sebastian_mountain_bug_shadow.title",
+  "location": "Mountain",
+  "eventKey": "9702216",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Abigail": 1,
+      "Sebastian": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.abigail_sebastian_mountain_bug_shadow.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

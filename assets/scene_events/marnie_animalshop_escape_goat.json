@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.marnie.animalshop_escape_goat",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.marnie.animalshop_escape_goat.title",
+  "location": "AnimalShop",
+  "eventKey": "9702122",
+  "weight": 95,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Marnie": 1
+    },
+    "chance": 0.65
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.marnie.animalshop_escape_goat.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

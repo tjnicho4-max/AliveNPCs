@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.maru_demetrius_mountain_bee_path",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.maru_demetrius_mountain_bee_path.title",
+  "location": "Mountain",
+  "eventKey": "9702231",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Maru": 3,
+      "Demetrius": 3
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 43
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.maru_demetrius_mountain_bee_path.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

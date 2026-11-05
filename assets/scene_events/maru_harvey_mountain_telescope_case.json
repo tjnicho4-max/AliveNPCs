@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.maru_harvey_mountain_telescope_case",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.maru_harvey_mountain_telescope_case.title",
+  "location": "Mountain",
+  "eventKey": "9702271",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Maru": 7,
+      "Harvey": 7
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 91
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.maru_harvey_mountain_telescope_case.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.maru_harvey_mountain_telescope_case.memoryText"
+  }
+}

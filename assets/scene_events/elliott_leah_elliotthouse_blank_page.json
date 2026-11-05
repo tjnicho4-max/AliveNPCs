@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.elliott_leah_elliotthouse_blank_page",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.elliott_leah_elliotthouse_blank_page.title",
+  "location": "ElliottHouse",
+  "eventKey": "9702252",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Elliott": 5,
+      "Leah": 5
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 67
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.elliott_leah_elliotthouse_blank_page.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.elliott_leah_elliotthouse_blank_page.memoryText"
+  }
+}

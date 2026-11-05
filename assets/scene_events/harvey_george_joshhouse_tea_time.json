@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.harvey_george_joshhouse_tea_time",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.harvey_george_joshhouse_tea_time.title",
+  "location": "JoshHouse",
+  "eventKey": "9702218",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Harvey": 1,
+      "George": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.harvey_george_joshhouse_tea_time.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

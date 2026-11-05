@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.linus_wizard_forest_moss_glow",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.linus_wizard_forest_moss_glow.title",
+  "location": "Forest",
+  "eventKey": "9702230",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Linus": 2,
+      "Wizard": 2
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 31
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.linus_wizard_forest_moss_glow.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

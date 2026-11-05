@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.gus_lewis_saloon_kind_ledger",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.gus_lewis_saloon_kind_ledger.title",
+  "location": "Saloon",
+  "eventKey": "9702278",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Gus": 7,
+      "Lewis": 7
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 91
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.gus_lewis_saloon_kind_ledger.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.gus_lewis_saloon_kind_ledger.memoryText"
+  }
+}

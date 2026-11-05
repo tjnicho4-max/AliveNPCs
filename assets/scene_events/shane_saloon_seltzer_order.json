@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.shane.saloon_seltzer_order",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.shane.saloon_seltzer_order.title",
+  "location": "Saloon",
+  "eventKey": "9702140",
+  "weight": 65,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Shane": 6
+    },
+    "chance": 0.5
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1600,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.shane.saloon_seltzer_order.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.shane.saloon_seltzer_order.memoryText"
+  }
+}

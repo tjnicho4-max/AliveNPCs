@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.clint.blacksmith_tiny_hinge",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.clint.blacksmith_tiny_hinge.title",
+  "location": "Blacksmith",
+  "eventKey": "9702121",
+  "weight": 85,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Clint": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.clint.blacksmith_tiny_hinge.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

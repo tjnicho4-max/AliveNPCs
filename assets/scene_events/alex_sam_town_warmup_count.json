@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.alex_sam_town_warmup_count",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.alex_sam_town_warmup_count.title",
+  "location": "Town",
+  "eventKey": "9702213",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Alex": 1,
+      "Sam": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.alex_sam_town_warmup_count.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

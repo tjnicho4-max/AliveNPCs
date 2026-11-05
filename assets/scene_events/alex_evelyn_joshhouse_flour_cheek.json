@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.alex_evelyn_joshhouse_flour_cheek",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.alex_evelyn_joshhouse_flour_cheek.title",
+  "location": "JoshHouse",
+  "eventKey": "9702244",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Alex": 4,
+      "Evelyn": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.alex_evelyn_joshhouse_flour_cheek.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.alex_evelyn_joshhouse_flour_cheek.memoryText"
+  }
+}

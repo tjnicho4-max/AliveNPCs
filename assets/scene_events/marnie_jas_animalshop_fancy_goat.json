@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.marnie_jas_animalshop_fancy_goat",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.marnie_jas_animalshop_fancy_goat.title",
+  "location": "AnimalShop",
+  "eventKey": "9702236",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Marnie": 3,
+      "Jas": 3
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 43
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.marnie_jas_animalshop_fancy_goat.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

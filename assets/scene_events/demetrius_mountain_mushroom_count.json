@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.demetrius.mountain_mushroom_count",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.demetrius.mountain_mushroom_count.title",
+  "location": "Mountain",
+  "eventKey": "9702118",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "fall"
+    ],
+    "minHearts": {
+      "Demetrius": 1
+    },
+    "chance": 0.7
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.demetrius.mountain_mushroom_count.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

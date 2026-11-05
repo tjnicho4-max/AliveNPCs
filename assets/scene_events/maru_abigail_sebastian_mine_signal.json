@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.maru_abigail_sebastian_mine_signal",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.maru_abigail_sebastian_mine_signal.title",
+  "location": "Mine",
+  "eventKey": "9702287",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Maru": 8,
+      "Abigail": 8,
+      "Sebastian": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 2200
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.maru_abigail_sebastian_mine_signal.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.maru_abigail_sebastian_mine_signal.memoryText"
+  }
+}

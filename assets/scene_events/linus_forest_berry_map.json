@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.linus.forest_berry_map",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.linus.forest_berry_map.title",
+  "location": "Forest",
+  "eventKey": "9702148",
+  "weight": 70,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "spring",
+      "fall"
+    ],
+    "minHearts": {
+      "Linus": 2
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.linus.forest_berry_map.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.linus.forest_berry_map.memoryText"
+  }
+}

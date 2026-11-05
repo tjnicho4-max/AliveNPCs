@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.gus.town_picnic_basket",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.gus.town_picnic_basket.title",
+  "location": "Town",
+  "eventKey": "9702144",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "weather": [
+      "Sunny"
+    ],
+    "minHearts": {
+      "Gus": 2
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1000,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.gus.town_picnic_basket.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.gus.town_picnic_basket.memoryText"
+  }
+}

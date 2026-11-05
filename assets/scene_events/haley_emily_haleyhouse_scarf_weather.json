@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.haley_emily_haleyhouse_scarf_weather",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.haley_emily_haleyhouse_scarf_weather.title",
+  "location": "HaleyHouse",
+  "eventKey": "9702225",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Haley": 2,
+      "Emily": 2
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 31
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.haley_emily_haleyhouse_scarf_weather.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

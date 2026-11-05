@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.kent_sam_vincent_model_plane",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.kent_sam_vincent_model_plane.title",
+  "location": "SamHouse",
+  "eventKey": "9702275",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Kent": 7,
+      "Sam": 7,
+      "Vincent": 7
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 91,
+    "minYear": 2
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.kent_sam_vincent_model_plane.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.kent_sam_vincent_model_plane.memoryText"
+  }
+}

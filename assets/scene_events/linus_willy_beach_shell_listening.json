@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.linus_willy_beach_shell_listening",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.linus_willy_beach_shell_listening.title",
+  "location": "Beach",
+  "eventKey": "9702250",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Linus": 4,
+      "Willy": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.linus_willy_beach_shell_listening.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.linus_willy_beach_shell_listening.memoryText"
+  }
+}

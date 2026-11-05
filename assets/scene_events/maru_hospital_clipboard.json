@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.maru.hospital_clipboard",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.maru.hospital_clipboard.title",
+  "location": "Hospital",
+  "eventKey": "9702136",
+  "weight": 85,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Maru": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.maru.hospital_clipboard.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

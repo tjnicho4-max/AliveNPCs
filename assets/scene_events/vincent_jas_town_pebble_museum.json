@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.vincent_jas_town_pebble_museum",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.vincent_jas_town_pebble_museum.title",
+  "location": "Town",
+  "eventKey": "9702204",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Vincent": 0,
+      "Jas": 0
+    },
+    "chance": 0.55,
+    "maxHearts": {
+      "Vincent": 0,
+      "Jas": 0
+    }
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.vincent_jas_town_pebble_museum.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

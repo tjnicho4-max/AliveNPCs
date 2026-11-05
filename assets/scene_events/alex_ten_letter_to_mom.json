@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.alex_ten_letter_to_mom",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.alex_ten_letter_to_mom.title",
+  "location": "JoshHouse",
+  "eventKey": "9702298",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Alex": 10
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 127
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.alex_ten_letter_to_mom.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.alex_ten_letter_to_mom.memoryText"
+  }
+}

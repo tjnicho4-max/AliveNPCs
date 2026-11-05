@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.linus_leo_mountain_nest",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.linus_leo_mountain_nest.title",
+  "location": "Mountain",
+  "eventKey": "9702269",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Linus": 6,
+      "Leo": 6
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 79
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.linus_leo_mountain_nest.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.linus_leo_mountain_nest.memoryText"
+  }
+}

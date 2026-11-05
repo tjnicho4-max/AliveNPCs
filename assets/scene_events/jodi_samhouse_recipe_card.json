@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.jodi.samhouse_recipe_card",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.jodi.samhouse_recipe_card.title",
+  "location": "SamHouse",
+  "eventKey": "9702123",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Jodi": 2
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.jodi.samhouse_recipe_card.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.jodi.samhouse_recipe_card.memoryText"
+  }
+}

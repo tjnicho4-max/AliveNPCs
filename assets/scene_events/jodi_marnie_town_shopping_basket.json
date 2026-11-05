@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.jodi_marnie_town_shopping_basket",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.jodi_marnie_town_shopping_basket.title",
+  "location": "Town",
+  "eventKey": "9702217",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Jodi": 1,
+      "Marnie": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.jodi_marnie_town_shopping_basket.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

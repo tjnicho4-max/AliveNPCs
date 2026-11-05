@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.leah_haley_forest_branch_photo",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.leah_haley_forest_branch_photo.title",
+  "location": "Forest",
+  "eventKey": "9702241",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Leah": 4,
+      "Haley": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.leah_haley_forest_branch_photo.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.leah_haley_forest_branch_photo.memoryText"
+  }
+}

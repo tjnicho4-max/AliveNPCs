@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.linus_leah_forest_fallen_leaf",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.linus_leah_forest_fallen_leaf.title",
+  "location": "Forest",
+  "eventKey": "9702210",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Linus": 0,
+      "Leah": 0
+    },
+    "chance": 0.55,
+    "maxHearts": {
+      "Linus": 0,
+      "Leah": 0
+    }
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.linus_leah_forest_fallen_leaf.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

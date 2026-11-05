@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.clint.town_coal_delivery",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.clint.town_coal_delivery.title",
+  "location": "Town",
+  "eventKey": "9702150",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Clint": 2
+    },
+    "chance": 0.5
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.clint.town_coal_delivery.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

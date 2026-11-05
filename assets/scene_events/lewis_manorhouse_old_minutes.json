@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.lewis.manorhouse_old_minutes",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.lewis.manorhouse_old_minutes.title",
+  "location": "ManorHouse",
+  "eventKey": "9702116",
+  "weight": 70,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Lewis": 2
+    },
+    "minDaysPlayed": 15,
+    "chance": 0.5
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.lewis.manorhouse_old_minutes.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.lewis.manorhouse_old_minutes.memoryText"
+  }
+}

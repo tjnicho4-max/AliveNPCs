@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.alex.joshhouse_photo_box",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.alex.joshhouse_photo_box.title",
+  "location": "JoshHouse",
+  "eventKey": "9702135",
+  "weight": 65,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Alex": 4
+    },
+    "chance": 0.5
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1000,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.alex.joshhouse_photo_box.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.alex.joshhouse_photo_box.memoryText"
+  }
+}

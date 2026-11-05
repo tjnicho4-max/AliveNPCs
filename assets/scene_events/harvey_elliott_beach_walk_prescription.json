@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.harvey_elliott_beach_walk_prescription",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.harvey_elliott_beach_walk_prescription.title",
+  "location": "Beach",
+  "eventKey": "9702254",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Harvey": 5,
+      "Elliott": 5
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 67
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.harvey_elliott_beach_walk_prescription.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.harvey_elliott_beach_walk_prescription.memoryText"
+  }
+}

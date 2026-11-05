@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.gus.saloon_soup_test",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.gus.saloon_soup_test.title",
+  "location": "Saloon",
+  "eventKey": "9702115",
+  "weight": 90,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Gus": 1
+    },
+    "chance": 0.65
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2300
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.gus.saloon_soup_test.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.gus.saloon_soup_test.memoryText"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.caroline_abigail_seedshop_seed_dare",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.caroline_abigail_seedshop_seed_dare.title",
+  "location": "SeedShop",
+  "eventKey": "9702222",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Caroline": 2,
+      "Abigail": 2
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 31
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.caroline_abigail_seedshop_seed_dare.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

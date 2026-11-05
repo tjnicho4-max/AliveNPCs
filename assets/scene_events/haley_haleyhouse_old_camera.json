@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.haley.haleyhouse_old_camera",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.haley.haleyhouse_old_camera.title",
+  "location": "HaleyHouse",
+  "eventKey": "9702133",
+  "weight": 70,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Haley": 4
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1000,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.haley.haleyhouse_old_camera.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.haley.haleyhouse_old_camera.memoryText"
+  }
+}

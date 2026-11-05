@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.clint_emily_saloon_tiny_clasp",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.clint_emily_saloon_tiny_clasp.title",
+  "location": "Saloon",
+  "eventKey": "9702229",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Clint": 2,
+      "Emily": 2
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 31
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.clint_emily_saloon_tiny_clasp.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

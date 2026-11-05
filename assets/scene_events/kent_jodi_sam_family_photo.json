@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.kent_jodi_sam_family_photo",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.kent_jodi_sam_family_photo.title",
+  "location": "SamHouse",
+  "eventKey": "9702292",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Kent": 9,
+      "Jodi": 9,
+      "Sam": 9
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 115,
+    "minYear": 2
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.kent_jodi_sam_family_photo.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.kent_jodi_sam_family_photo.memoryText"
+  }
+}

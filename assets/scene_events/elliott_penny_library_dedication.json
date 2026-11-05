@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.elliott_penny_library_dedication",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.elliott_penny_library_dedication.title",
+  "location": "ArchaeologyHouse",
+  "eventKey": "9702267",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Elliott": 6,
+      "Penny": 6
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 79
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.elliott_penny_library_dedication.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.elliott_penny_library_dedication.memoryText"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.kent.samhouse_quiet_morning",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.kent.samhouse_quiet_morning.title",
+  "location": "SamHouse",
+  "eventKey": "9702124",
+  "weight": 65,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minYear": 2,
+    "minHearts": {
+      "Kent": 2
+    },
+    "chance": 0.5
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1200
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.kent.samhouse_quiet_morning.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.kent.samhouse_quiet_morning.memoryText"
+  }
+}

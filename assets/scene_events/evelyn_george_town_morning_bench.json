@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.evelyn_george_town_morning_bench",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.evelyn_george_town_morning_bench.title",
+  "location": "Town",
+  "eventKey": "9702203",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "weather": [
+      "Sunny"
+    ],
+    "minHearts": {
+      "Evelyn": 0,
+      "George": 0
+    },
+    "chance": 0.55,
+    "maxHearts": {
+      "Evelyn": 0,
+      "George": 0
+    }
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.evelyn_george_town_morning_bench.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}
