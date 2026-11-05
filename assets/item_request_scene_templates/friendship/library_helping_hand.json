@@ -1,0 +1,30 @@
+{
+  "templateId": "friendship/library_helping_hand",
+  "sceneType": "friendship",
+  "title": "Library Helping Hand",
+  "location": "ArchaeologyHouse",
+  "timeWindow": {
+    "min": 900,
+    "max": 1800
+  },
+  "relationshipGate": "friendship_2_hearts_or_shared_interest",
+  "itemHints": [
+    "Coffee",
+    "Tulip",
+    "Daffodil",
+    "Quartz",
+    "Amethyst"
+  ],
+  "blockedForChildCodedNpcs": false,
+  "wildcards": [
+    "FAVOR_ID",
+    "NPC",
+    "FARMER",
+    "ITEM_NAME",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "MEMORY_REFERENCE"
+  ],
+  "llmLineInstructions": "Quiet friendship in the museum/library. The NPC thanks the farmer like someone who noticed a small act of care.",
+  "scriptTemplate": "continue/10 5/farmer 9 5 2 {{NPC}} 11 5 3/skippable/AliveNpcsItemRequestSceneComplete {{FAVOR_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 300/speak {{NPC}} \"{{NPC_LINE_2}}\"/end"
+}

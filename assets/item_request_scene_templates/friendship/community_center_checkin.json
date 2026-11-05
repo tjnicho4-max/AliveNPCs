@@ -1,0 +1,30 @@
+{
+  "templateId": "friendship/community_center_checkin",
+  "sceneType": "friendship",
+  "title": "Community Center Check-in",
+  "location": "CommunityCenter",
+  "timeWindow": {
+    "min": 900,
+    "max": 1800
+  },
+  "relationshipGate": "friendship_2_hearts_or_kind_context",
+  "itemHints": [
+    "Wood",
+    "Stone",
+    "Daffodil",
+    "Leek",
+    "Parsnip"
+  ],
+  "blockedForChildCodedNpcs": false,
+  "wildcards": [
+    "FAVOR_ID",
+    "NPC",
+    "FARMER",
+    "ITEM_NAME",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "MEMORY_REFERENCE"
+  ],
+  "llmLineInstructions": "Friendly and community-minded. The NPC frames the item as a small help that makes the valley feel less lonely or more cared for.",
+  "scriptTemplate": "continue/20 20/farmer 19 20 2 {{NPC}} 21 20 3/skippable/AliveNpcsItemRequestSceneComplete {{FAVOR_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_2}}\"/end"
+}

@@ -1,0 +1,30 @@
+{
+  "templateId": "funny/town_square_wrong_bag",
+  "sceneType": "funny",
+  "title": "Town Square Wrong Bag",
+  "location": "Town",
+  "timeWindow": {
+    "min": 900,
+    "max": 2000
+  },
+  "relationshipGate": "any_safe_npc",
+  "itemHints": [
+    "Joja Cola",
+    "Cookie",
+    "Egg",
+    "Green Algae",
+    "Parsnip"
+  ],
+  "blockedForChildCodedNpcs": false,
+  "wildcards": [
+    "FAVOR_ID",
+    "NPC",
+    "FARMER",
+    "ITEM_NAME",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "MEMORY_REFERENCE"
+  ],
+  "llmLineInstructions": "Lightly funny, never mean. The item solves a small mix-up or awkward moment in town. The NPC should laugh at the situation, not at the farmer.",
+  "scriptTemplate": "continue/45 70/farmer 44 70 2 {{NPC}} 46 70 3/skippable/AliveNpcsItemRequestSceneComplete {{FAVOR_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/emote {{NPC}} 16/speak {{NPC}} \"{{NPC_LINE_2}}\"/end"
+}

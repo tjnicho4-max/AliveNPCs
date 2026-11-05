@@ -1,0 +1,30 @@
+{
+  "templateId": "date/saloon_corner_toast",
+  "sceneType": "date",
+  "title": "Saloon Corner Toast",
+  "location": "Saloon",
+  "timeWindow": {
+    "min": 1700,
+    "max": 2400
+  },
+  "relationshipGate": "adult_romantic_partner_or_dating_eligible_high_hearts",
+  "itemHints": [
+    "Pizza",
+    "Spaghetti",
+    "Coffee",
+    "Salad",
+    "Wine"
+  ],
+  "blockedForChildCodedNpcs": true,
+  "wildcards": [
+    "FAVOR_ID",
+    "NPC",
+    "FARMER",
+    "ITEM_NAME",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "MEMORY_REFERENCE"
+  ],
+  "llmLineInstructions": "A soft public date at the Saloon. Keep it sweet, brief, and age-safe. The item should feel like something chosen for a quiet corner together.",
+  "scriptTemplate": "continue/10 18/farmer 9 18 2 {{NPC}} 11 18 3/skippable/AliveNpcsItemRequestSceneComplete {{FAVOR_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 250/speak {{NPC}} \"{{NPC_LINE_2}}\"/end"
+}

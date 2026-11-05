@@ -1,0 +1,30 @@
+{
+  "templateId": "funny/saloon_taste_test_mixup",
+  "sceneType": "funny",
+  "title": "Saloon Taste Test Mix-up",
+  "location": "Saloon",
+  "timeWindow": {
+    "min": 1200,
+    "max": 2400
+  },
+  "relationshipGate": "any_safe_npc",
+  "itemHints": [
+    "Pizza",
+    "Hot Pepper",
+    "Parsnip",
+    "Cheese",
+    "Coffee"
+  ],
+  "blockedForChildCodedNpcs": false,
+  "wildcards": [
+    "FAVOR_ID",
+    "NPC",
+    "FARMER",
+    "ITEM_NAME",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "MEMORY_REFERENCE"
+  ],
+  "llmLineInstructions": "A harmless taste-test gag at the Saloon. The NPC is amused and grateful. Keep the comedy small and character-specific.",
+  "scriptTemplate": "continue/10 18/farmer 9 18 2 {{NPC}} 11 18 3/skippable/AliveNpcsItemRequestSceneComplete {{FAVOR_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_2}}\"/end"
+}
