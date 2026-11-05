@@ -1,0 +1,1185 @@
+{
+
+  "Format": 1,
+  "Types": {
+
+    "bomb": {
+      "Grade": 8,
+      "HalfLifeDays": 14,
+      "RangeTiles": -1,
+      "MinCertainty": 3,
+      "Perception": { "ThroughWalls": true, "WakesSleepers": true, "HeardFloor": 0.5 },
+      "Meters": {
+        "confront": { "Weight": 2.5 },
+        "humor": { "Weight": 0.25 }
+      },
+      "Phrases": {
+        "Levels": {
+          "5": "You clearly saw {actor} set off {count?a bomb|# bombs}[, {nearPhrase}]",
+          "4": "You saw {actor} set off {count?a bomb|# bombs}[, {nearPhrase}]",
+          "3": "You heard {count?an explosion|# explosions}[, {nearPhrase}] and think {actor} was behind it",
+          "2": "You heard {count?an explosion|# explosions}[, {nearPhrase}] and think {actor} may have caused it, but you're not sure",
+          "1": "You heard loud bangs somewhere nearby, but you're not sure what they were"
+        },
+        "Past": "{actor} set off {count?a bomb|# bombs}[ ({nearPhrase})]"
+      }
+    },
+
+    "follow_npc": {
+      "Grade": 9,
+      "HalfLifeDays": 3,
+      "RangeTiles": 6,
+      "MinCertainty": 4,
+      "Meters": {
+        "confront": { "Weight": 4 }
+      },
+      "Phrases": {
+        "Full": "{actor} followed {target} closely from behind until {target} confronted them",
+        "Reduced": "{actor} kept following {target}",
+        "Glimpse": "{actor} trailing behind {target}",
+        "Past": "{actor} followed {target} closely enough to make them uncomfortable"
+      }
+    },
+
+    "tool_hit": {
+      "Grade": 10,
+      "HalfLifeDays": 21,
+      "RangeTiles": 10,
+      "MinCertainty": 3,
+      "Meters": {
+        "confront": { "Weight": 4 }
+      },
+      "Rules": [
+        {
+          "Name": "hit personally",
+          "When": { "Role": [ "target" ] },
+          "Multiply": { "confront": 1.5 }
+        },
+        {
+          "Name": "hit with a weapon",
+          "When": { "Payload": { "weapon": "true" } },
+          "Multiply": { "confront": 2 },
+          "Phrases": {
+            "Full": "{actor} swinging {a:tool} and actually striking {target} — a weapon, no less"
+          }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} swinging {a:tool} and actually striking {target}[, {nearPhrase}]",
+        "Reduced": "{actor} swinging something at {target}",
+        "Glimpse": "some kind of scuffle near {target}",
+        "Past": "{actor} struck {target} with {a:tool}"
+      }
+    },
+
+    "water_npc": {
+      "Grade": 4,
+      "HalfLifeDays": 5,
+      "RangeTiles": 8,
+      "MinCertainty": 3,
+      "Meters": {
+        "confront": { "Weight": 2.5, "Roles": [ "target" ] },
+        "humor": { "Weight": 2 }
+      },
+      "Rules": [
+        {
+          "Name": "watered personally",
+          "When": { "Role": [ "target" ] },
+          "Set": { "humor": 0 }
+        },
+        {
+          "Name": "a cool splash in summer",
+          "When": { "Role": [ "target" ], "Season": [ "summer" ] },
+          "Set": { "confront": 0, "humor": 2.5 }
+        },
+        {
+          "Name": "freezing water in winter",
+          "When": { "Role": [ "target" ], "Season": [ "winter" ] },
+          "Multiply": { "confront": 1.6 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} pouring a watering can over {target}[, {nearPhrase}]",
+        "Reduced": "{actor} splashing water at {target}",
+        "Glimpse": "someone splashing water near {target}",
+        "Past": "{actor} watered {target} with a watering can"
+      },
+      "Bubble": {
+        "Emote": "exclamation",
+        "WalkUpFromLevel": 2,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.water_npc.default.1",
+            "seenAndHeard.bubble.water_npc.default.2",
+            "seenAndHeard.bubble.water_npc.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.water_npc.friend.1",
+            "seenAndHeard.bubble.water_npc.friend.2"
+          ],
+          "spouse": [
+            "seenAndHeard.bubble.water_npc.spouse.1",
+            "seenAndHeard.bubble.water_npc.spouse.2"
+          ],
+          "child": [
+            "seenAndHeard.bubble.water_npc.child.1",
+            "seenAndHeard.bubble.water_npc.child.2"
+          ]
+        }
+      }
+    },
+
+    "tool_near_miss": {
+      "Grade": 5,
+      "HalfLifeDays": 3,
+      "RangeTiles": 8,
+      "MinCertainty": 2,
+      "Meters": {
+        "confront": { "Weight": 1.5 }
+      },
+      "Rules": [
+        {
+          "Name": "nearly hit personally",
+          "When": { "Role": [ "target" ] },
+          "Multiply": { "confront": 1.5 }
+        },
+        {
+          "Name": "swung a weapon close by",
+          "When": { "Payload": { "weapon": "true" } },
+          "Multiply": { "confront": 2 },
+          "Phrases": {
+            "Full": "{actor} swinging {a:tool} close enough to {target} to be dangerous — a weapon, out here"
+          }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} swinging {a:tool} close enough to {target} that it could have hit them[, {nearPhrase}]",
+        "Reduced": "{actor} swinging something close to {target}",
+        "Glimpse": "someone swinging a tool near {target}",
+        "Past": "{actor} nearly hit {target} with {a:tool}"
+      },
+      "Bubble": {
+        "Emote": "exclamation",
+        "WalkUpFromLevel": 2,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.tool_near_miss.default.1",
+            "seenAndHeard.bubble.tool_near_miss.default.2",
+            "seenAndHeard.bubble.tool_near_miss.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.tool_near_miss.friend.1",
+            "seenAndHeard.bubble.tool_near_miss.friend.2"
+          ]
+        }
+      }
+    },
+
+    "slingshot_hit": {
+      "Grade": 11,
+      "HalfLifeDays": 21,
+      "RangeTiles": 12,
+      "MinCertainty": 3,
+      "Meters": {
+        "confront": { "Weight": 5 }
+      },
+      "Rules": [
+        {
+          "Name": "hit personally",
+          "When": { "Role": [ "target" ] },
+          "Multiply": { "confront": 1.5 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} firing a slingshot and actually hitting {target} with it[, {nearPhrase}]",
+        "Reduced": "{actor} firing something at {target}",
+        "Glimpse": "some kind of scuffle near {target}",
+        "Past": "{actor} hit {target} with a slingshot"
+      }
+    },
+
+    "slingshot_near_miss": {
+      "Grade": 6,
+      "HalfLifeDays": 3,
+      "RangeTiles": 10,
+      "MinCertainty": 2,
+      "Meters": {
+        "confront": { "Weight": 2 }
+      },
+      "Rules": [
+        {
+          "Name": "nearly hit personally",
+          "When": { "Role": [ "target" ] },
+          "Multiply": { "confront": 1.5 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} firing a slingshot close enough to {target} that it could have hit them[, {nearPhrase}]",
+        "Reduced": "{actor} firing something close to {target}",
+        "Glimpse": "someone firing a slingshot near {target}",
+        "Past": "{actor} nearly hit {target} with a slingshot"
+      },
+      "Bubble": {
+        "Emote": "exclamation",
+        "WalkUpFromLevel": 2,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.slingshot_near_miss.default.1",
+            "seenAndHeard.bubble.slingshot_near_miss.default.2",
+            "seenAndHeard.bubble.slingshot_near_miss.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.slingshot_near_miss.friend.1",
+            "seenAndHeard.bubble.slingshot_near_miss.friend.2"
+          ]
+        }
+      }
+    },
+
+    "room": {
+      "Grade": 7,
+      "HalfLifeDays": 14,
+      "RangeTiles": -1,
+      "Meters": {
+        "confront": { "Weight": 1 }
+      },
+      "Rules": [
+        {
+          "Name": "trusted enough to be here",
+          "When": { "Role": [ "target" ], "MinHearts": 2 },
+          "Multiply": { "confront": 0 },
+          "Set": { "tenderness": 0.5 },
+          "Phrases": {
+            "Full": "{actor} stopping by {owners} bedroom — a friend dropping in, nothing more"
+          }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} go into {owners} bedroom[ and stay about {p:stayMinutes} minutes]",
+        "Reduced": "{actor} near {owners} bedroom",
+        "Glimpse": "in the back rooms of the house",
+        "Past": "{actor} went into {owners} bedroom[ and stayed about {p:stayMinutes} minutes]"
+      }
+    },
+
+    "sleep_outside": {
+      "Grade": 6,
+      "HalfLifeDays": 7,
+      "RangeTiles": 12,
+      "MinCertainty": 3,
+      "Meters": {
+        "confront": { "Weight": 0.6 },
+        "tenderness": { "Weight": 0.5 },
+        "humor": { "Weight": 0.3 }
+      },
+      "Tokens": {
+        "whenText": { "From": "reason", "Map": { "2am": " in the middle of the night" } }
+      },
+      "Phrases": {
+        "Full": "{actor} pass out on the ground[, {nearPhrase}]{whenText}",
+        "Reduced": "{actor} lying on the ground[, {nearPhrase}]",
+        "Glimpse": "lying on the ground[, {nearPhrase}]",
+        "Past": "{actor} passed out on the ground[ ({nearPhrase})]"
+      }
+    },
+
+    "trash": {
+      "Grade": 5,
+      "HalfLifeDays": 7,
+      "RangeTiles": 8,
+      "Meters": {
+        "confront": { "Weight": 1 }
+      },
+      "Phrases": {
+        "Full": "{actor} dig through [the trash can outside {owners} home|a trash can]",
+        "Reduced": "{actor} rummaging around a trash can[ outside {owners} home]",
+        "Glimpse": "by the trash cans[ outside {owners} home]",
+        "Past": "{actor} dug through [the trash can outside {owners} home|a trash can]"
+      }
+    },
+
+    "gift": {
+      "Grade": 4,
+      "HalfLifeDays": 5,
+      "RangeTiles": 10,
+      "Meters": {
+        "tenderness": { "Weight": 2, "Roles": [ "target" ] }
+      },
+      "Rules": [
+        {
+          "Name": "a gift they didn't want",
+          "When": { "Role": [ "target" ], "Payload": { "taste": "hated" } },
+          "Set": { "tenderness": 0 }
+        },
+        {
+          "Name": "a gift that missed",
+          "When": { "Role": [ "target" ], "Payload": { "taste": "disliked" } },
+          "Set": { "tenderness": 0 }
+        }
+      ],
+      "Tokens": {
+        "birthdayText": {
+          "From": "birthday",
+          "Map": { "true": "for {targetPossessive} birthday" }
+        },
+        "tasteText": {
+          "From": "taste",
+          "Map": {
+            "loved": "{target} loved it",
+            "liked": "{target} liked it",
+            "disliked": "{target} didn't like it",
+            "hated": "{target} hated it"
+          }
+        },
+        "tasteVerb": {
+          "From": "taste",
+          "Map": { "loved": "loved", "liked": "liked", "disliked": "disliked", "hated": "hated" }
+        }
+      },
+      "Phrases": {
+        "Full": "{actor} give {target} {a:item}[ {birthdayText}][ — {tasteText}][, while {n:partner} was standing right there][, {nearPhrase}]",
+        "Reduced": "{actor} hand {target} something[, while {n:partner} was standing right there]",
+        "Glimpse": "handing something to {target}",
+        "Past": "{actor} gave {target} {a:item}[ {birthdayText}][, and {target} {tasteVerb} it][ while {n:partner} watched]"
+      }
+    },
+
+    "room_locked": {
+      "Grade": 4,
+      "HalfLifeDays": 14,
+      "RangeTiles": -1,
+      "Meters": {
+        "confront": { "Weight": 1 }
+      },
+      "Rules": [
+        {
+          "Name": "trusted enough that this shouldn't even be locked",
+          "When": { "Role": [ "target" ], "MinHearts": 2 },
+          "Multiply": { "confront": 0 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} try to open {owners} bedroom door and get turned away[ — you watched them try it {seen?|#} times|[ (they tried it {attempt?|#} times today)]]",
+        "Reduced": "{actor} at {owners} bedroom door",
+        "Glimpse": "by the bedroom doors",
+        "Past": "{actor} tried {owners} bedroom door and was turned away"
+      }
+    },
+
+    "talk": {
+      "Grade": 3,
+      "HalfLifeDays": 3,
+      "RangeTiles": 10,
+      "VariantBy": "secretMode",
+      "Variants": {
+        "secret": {
+          "Full": "{actor} talking quietly with {target}[ {p:turns?|for a while}][, {nearPhrase}]",
+          "Reduced": "{actor} talking with {target}",
+          "Glimpse": "talking with someone",
+          "Past": "{actor} talked quietly with {target}"
+        },
+        "open": {
+          "Full": "{actor} talking with {target}[ {p:turns?|for a while}][ — {actor} said \"{p:said}\"[ and {target} answered \"{p:replied}\"]]",
+          "Reduced": "{actor} talking with {target}[ about \"{p:topic}\"]",
+          "Glimpse": "talking with someone",
+          "Past": "{actor} talked with {target}[ about \"{p:topic}\"]"
+        }
+      }
+    },
+
+    "phone_text": {
+      "Grade": 3,
+      "HalfLifeDays": 2,
+      "RangeTiles": 10,
+      "MinCertainty": 2,
+      "Meters": {
+        "humor": { "Weight": 0.8 }
+      },
+      "Phrases": {
+        "Full": "{actor} texting {target} while standing right next to them[, {nearPhrase}]",
+        "Reduced": "{actor} texting {target}, who was right there",
+        "Glimpse": "someone glued to their phone",
+        "Past": "{actor} texted {target} while standing right next to them"
+      }
+    },
+
+    "room_unlocked": {
+      "Grade": 3,
+      "HalfLifeDays": 14,
+      "RangeTiles": -1,
+      "Meters": {
+        "confront": { "Weight": 0.5 }
+      },
+      "Rules": [
+        {
+          "Name": "trusted enough to be here",
+          "When": { "Role": [ "target" ], "MinHearts": 2 },
+          "Multiply": { "confront": 0 },
+          "Set": { "tenderness": 0.5 },
+          "Phrases": {
+            "Full": "{actor} letting themselves into {owners} bedroom — a friend, not an intruder"
+          }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} open {owners} bedroom door for the first time",
+        "Reduced": "{actor} going through {owners} bedroom door",
+        "Glimpse": "by the bedroom doors",
+        "Past": "{actor} opened {owners} bedroom door for the first time"
+      }
+    },
+
+    "purchase": {
+      "Grade": 2,
+      "HalfLifeDays": 2,
+      "RangeTiles": -1,
+      "Phrases": {
+        "Full": "{actor} buy {p:items} [from {you:vendor}|at [{p:shopDisplay}|{location}]]",
+        "Reduced": "{actor} buying something at [{p:shopDisplay}|{location}]",
+        "Glimpse": "at the counter of [{p:shopDisplay}|{location}]",
+        "Past": "{actor} bought {p:items} at [{p:shopDisplay}|{location}]"
+      }
+    },
+
+    "consume": {
+      "Grade": 2.5,
+      "HalfLifeDays": 2,
+      "RangeTiles": 8,
+      "Meters": {
+        "confront": { "Weight": 1, "RequiresPayload": "alcohol" },
+        "humor": { "Weight": 1, "RequiresPayload": "alcohol" }
+      },
+      "Rules": [
+        {
+          "Name": "Shane thinks it's a laugh",
+          "When": { "Witness": [ "Shane" ], "Payload": { "kind": "alcohol" } },
+          "Multiply": { "humor": 3, "confront": 0 },
+          "Phrases": {
+            "Full": "{actor} throwing back [{p:item} {count?|#} times in a row|{a:item}][, {nearPhrase}] — the kind of evening you know well",
+            "Reduced": "{actor} drinking something[, {nearPhrase}]"
+          }
+        },
+        {
+          "Name": "Gus sees a good customer",
+          "When": { "Witness": [ "Gus" ], "Payload": { "kind": "alcohol" } },
+          "Multiply": { "humor": 1.5, "confront": 0 },
+          "Reward": { "Item": "(O)346", "CountByTier": [ 1, 2, 3 ] },
+          "Phrases": {
+            "Full": "{actor} putting away [{p:item} {count?|#} times in a row|{a:item}][, {nearPhrase}] — good for business, and good company"
+          }
+        },
+        {
+          "Name": "Penny minds the children",
+          "When": {
+            "Witness": [ "Penny" ],
+            "Payload": { "kind": "alcohol" },
+            "NearbyAge": { "Age": "child", "Tiles": 8 }
+          },
+          "Multiply": { "confront": 6, "humor": 0 },
+          "Phrases": {
+            "Full": "{actor} drinking [{p:item} {count?|#} times in a row|{a:item}] with {p:nearbychildCount?a child|# children} right there — a bad example to be setting[, {nearPhrase}]"
+          }
+        }
+      ],
+      "VariantBy": "p:kind",
+      "Variants": {
+        "alcohol": {
+          "Full": "{actor} drink [{p:item} {count?|#} times in a row|{a:item}][, {nearPhrase}][ — that's {seen?|#} drinks you've watched them have today]",
+          "Reduced": "{actor} drinking something[, {nearPhrase}]",
+          "Glimpse": "with something in hand[, {nearPhrase}]",
+          "Past": "{actor} drank [{count?|#}× {p:item}|{a:item}][ ({nearPhrase})]"
+        },
+        "drink": {
+          "Full": "{actor} drink [{p:item} {count?|#} times in a row|{a:item}][, {nearPhrase}]",
+          "Reduced": "{actor} drinking something[, {nearPhrase}]",
+          "Glimpse": "with something in hand[, {nearPhrase}]",
+          "Past": "{actor} drank [{count?|#}× {p:item}|{a:item}][ ({nearPhrase})]"
+        },
+        "default": {
+          "Full": "{actor} eat [{p:item} {count?|#} times in a row|{a:item}][, {nearPhrase}]",
+          "Reduced": "{actor} eating something[, {nearPhrase}]",
+          "Glimpse": "with something in hand[, {nearPhrase}]",
+          "Past": "{actor} ate [{count?|#}× {p:item}|{a:item}][ ({nearPhrase})]"
+        }
+      }
+    },
+
+    "place": {
+      "Grade": 2,
+      "HalfLifeDays": 2,
+      "RangeTiles": 8,
+      "VariantBy": "p:action",
+      "Variants": {
+        "enter": {
+          "Full": "{actor} go into {place}",
+          "Reduced": "{actor} heading into {place}",
+          "Glimpse": "near a doorway",
+          "Past": "{actor} went into [{p:placeDisplay}|{location}]"
+        },
+        "leave": {
+          "Full": "{actor} come out of {place}",
+          "Reduced": "{actor} coming out of {place}",
+          "Glimpse": "near a doorway",
+          "Past": "{actor} came out of [{p:placeDisplay}|{location}]"
+        }
+      }
+    },
+
+    "map": {
+      "Grade": 1,
+      "HalfLifeDays": 1,
+      "RangeTiles": 8,
+      "Phrases": {
+        "Full": "{actor} head from [{p:fromDisplay}|somewhere] toward [{p:toDisplay}|somewhere][, {nearPhrase}]",
+        "Reduced": "{actor} passing through[, {nearPhrase}]",
+        "Glimpse": "passing through",
+        "Past": "{actor} went from [{p:fromDisplay}|somewhere] to [{p:toDisplay}|somewhere]"
+      }
+    },
+
+    "dating_proposal": {
+      "Grade": 6,
+      "HalfLifeDays": 6,
+      "RangeTiles": 10,
+      "MinCertainty": 3,
+      "Meters": {},
+      "Rules": [
+        {
+          "Name": "she said yes",
+          "When": { "Role": [ "target" ], "Payload": { "result": "accepted" } },
+          "Set": { "love": 4 },
+          "Phrases": {
+            "Full": "{actor} asking {target} to date them, and {target} saying yes[, {nearPhrase}]"
+          }
+        },
+        {
+          "Name": "the town is happy for them",
+          "When": { "Role": [ "bystander", "relative" ], "Payload": { "result": "accepted" } },
+          "Set": { "tenderness": 1.5 },
+          "Phrases": {
+            "Full": "{actor} asking {target} to date them, and {target} saying yes[, {nearPhrase}]"
+          }
+        },
+        {
+          "Name": "turned down gently",
+          "When": { "Role": [ "target" ], "Payload": { "result": "rejected" } },
+          "Silent": true,
+          "Phrases": {
+            "Full": "{actor} asking {target} to date them, and {target} turning them down ({reasonText})"
+          }
+        },
+        {
+          "Name": "awkward to watch",
+          "When": { "Role": [ "bystander", "relative" ], "Payload": { "result": "rejected" } },
+          "Set": { "humor": 1.2 },
+          "Phrases": {
+            "Full": "{actor} asking {target} to date them, and getting turned down right there ({reasonText})"
+          }
+        },
+        {
+          "Name": "caught two-timing",
+          "When": { "Role": [ "bystander", "relative" ], "PlayerPartner": true },
+          "Set": { "confront": 10 },
+          "Multiply": { "tenderness": 0, "humor": 0 },
+          "Phrases": {
+            "Full": "{actor} asking {target} to date them — while you were standing right there"
+          }
+        }
+      ],
+      "Tokens": {
+        "reasonText": {
+          "From": "reason",
+          "Map": {
+            "not_datable": "not someone who dates",
+            "already_committed": "already spoken for",
+            "divorced": "still too raw from the divorce",
+            "already_together": "already dating them",
+            "too_soon": "not ready for that yet"
+          },
+          "Default": "not interested"
+        }
+      },
+      "VariantBy": "p:result",
+      "Variants": {
+        "accepted": { "Full": "{actor} asking {target} to date them, and hearing yes" },
+        "rejected": { "Full": "{actor} asking {target} to date them, and getting turned down" }
+      },
+      "Phrases": {
+        "Full": "{actor} asking {target} to date them"
+      }
+    },
+
+    "marriage_proposal": {
+      "Grade": 9,
+      "HalfLifeDays": 10,
+      "RangeTiles": 12,
+      "MinCertainty": 3,
+      "Meters": {},
+      "Rules": [
+        {
+          "Name": "the answer is yes",
+          "When": { "Role": [ "target" ], "Payload": { "result": "accepted" } },
+          "Set": { "love": 8 },
+          "Phrases": {
+            "Full": "{actor} proposing marriage to {target}, and {target} saying yes[, {nearPhrase}]"
+          }
+        },
+        {
+          "Name": "the whole town will hear about this",
+          "When": { "Role": [ "bystander", "relative" ], "Payload": { "result": "accepted" } },
+          "Set": { "tenderness": 3 },
+          "Phrases": {
+            "Full": "{actor} proposing marriage to {target}, and {target} saying yes[, {nearPhrase}]"
+          }
+        },
+        {
+          "Name": "turned down",
+          "When": { "Role": [ "target" ], "Payload": { "result": "rejected" } },
+          "Silent": true,
+          "Phrases": {
+            "Full": "{actor} proposing marriage to {target}, and {target} turning them down ({reasonText})"
+          }
+        },
+        {
+          "Name": "an awkward proposal",
+          "When": { "Role": [ "bystander", "relative" ], "Payload": { "result": "rejected" } },
+          "Set": { "humor": 1.8 },
+          "Phrases": {
+            "Full": "{actor} proposing marriage to {target}, and getting turned down right there ({reasonText})"
+          }
+        },
+        {
+          "Name": "proposing to someone else, right in front of you",
+          "When": { "Role": [ "bystander", "relative" ], "PlayerPartner": true },
+          "Set": { "confront": 20 },
+          "Multiply": { "tenderness": 0, "humor": 0, "love": 0 },
+          "Phrases": {
+            "Full": "{actor} proposing marriage to {target} — while you were standing right there"
+          }
+        }
+      ],
+      "Tokens": {
+        "reasonText": {
+          "From": "reason",
+          "Map": {
+            "not_datable": "not someone who marries",
+            "already_committed": "already spoken for",
+            "divorced": "still too raw from the divorce",
+            "not_dating_yet": "not even dating them yet",
+            "already_together": "already engaged to them",
+            "house_too_small": "citing the cramped house",
+            "too_soon": "not ready for that yet"
+          },
+          "Default": "not ready for that"
+        }
+      },
+      "VariantBy": "p:result",
+      "Variants": {
+        "accepted": { "Full": "{actor} proposing marriage to {target}, and hearing yes" },
+        "rejected": { "Full": "{actor} proposing marriage to {target}, and getting turned down" }
+      },
+      "Phrases": {
+        "Full": "{actor} proposing marriage to {target}"
+      }
+    },
+
+    "fishing": {
+      "Grade": 3,
+      "HalfLifeDays": 1,
+      "RangeTiles": 12,
+      "MinCertainty": 3,
+      "Meters": {
+        "tenderness": { "Weight": 0.5 },
+        "humor": { "Weight": 0.25 }
+      },
+      "Phrases": {
+        "Full": "{actor} fishing nearby and inspiring someone to join in",
+        "Reduced": "{actor} fishing nearby",
+        "Glimpse": "someone fishing nearby",
+        "Past": "{actor} went fishing nearby"
+      }
+    },
+
+    "npc_move": {
+      "Grade": 1,
+      "HalfLifeDays": 1,
+      "RangeTiles": -1,
+      "Phrases": {
+        "Full": "{actor} arrive at [{p:placeDisplay}|{location}]",
+        "Reduced": "{actor} coming in",
+        "Glimpse": "coming in",
+        "Past": "{actor} arrived at [{p:placeDisplay}|{location}]"
+      }
+    },
+    "stare": {
+      "Grade": 2,
+      "HalfLifeDays": 1,
+      "RangeTiles": 4,
+      "MinCertainty": 3,
+      "Meters": {
+        "humor": { "Weight": 0.5, "Roles": ["target"] }
+      },
+      "Rules": [
+        {
+          "Name": "stared at by their partner",
+          "When": { "Role": ["target"], "PlayerPartner": true },
+          "Set": { "humor": 0, "tenderness": 1 },
+          "Phrases": { "Full": "{actor} gazing at {target} for a long moment, saying nothing" }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} standing right in front of {target} and staring at them for a few seconds without a word",
+        "Reduced": "{actor} staring at {target}",
+        "Glimpse": "someone staring at {target}",
+        "Past": "{actor} stood there staring at {target} without saying anything"
+      },
+      "Bubble": {
+        "Emote": "question",
+        "MaxPerNpcPerDay": 4,
+        "WalkUpFromLevel": 3,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.stare.default.1",
+            "seenAndHeard.bubble.stare.default.2",
+            "seenAndHeard.bubble.stare.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.stare.friend.1",
+            "seenAndHeard.bubble.stare.friend.2"
+          ],
+          "partner": [
+            "seenAndHeard.bubble.stare.partner.1",
+            "seenAndHeard.bubble.stare.partner.2"
+          ],
+          "spouse": [
+            "seenAndHeard.bubble.stare.spouse.1",
+            "seenAndHeard.bubble.stare.spouse.2"
+          ],
+          "child": [
+            "seenAndHeard.bubble.stare.child.1",
+            "seenAndHeard.bubble.stare.child.2"
+          ]
+        }
+      }
+    },
+
+    "block_path": {
+      "Grade": 3,
+      "HalfLifeDays": 2,
+      "RangeTiles": 6,
+      "MinCertainty": 3,
+      "Meters": {
+        "confront": { "Weight": 1, "Roles": ["target"] },
+        "humor": { "Weight": 0.3 }
+      },
+      "Rules": [
+        {
+          "Name": "blocked by their partner",
+          "When": { "Role": ["target"], "PlayerPartner": true },
+          "Multiply": { "confront": 0.3 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} planting themselves in {target}'s way and not moving[ for {p:seconds} seconds]",
+        "Reduced": "{actor} standing in {target}'s way",
+        "Glimpse": "someone blocking {target}",
+        "Past": "{actor} stood in {target}'s way and would not move"
+      },
+      "Bubble": {
+        "Emote": "exclamation",
+        "WalkUpFromLevel": 2,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.block_path.default.1",
+            "seenAndHeard.bubble.block_path.default.2",
+            "seenAndHeard.bubble.block_path.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.block_path.friend.1",
+            "seenAndHeard.bubble.block_path.friend.2"
+          ],
+          "spouse": [
+            "seenAndHeard.bubble.block_path.spouse.1",
+            "seenAndHeard.bubble.block_path.spouse.2"
+          ],
+          "child": [
+            "seenAndHeard.bubble.block_path.child.1",
+            "seenAndHeard.bubble.block_path.child.2"
+          ]
+        }
+      }
+    },
+
+    "kiss": {
+      "Grade": 3,
+      "HalfLifeDays": 5,
+      "RangeTiles": 10,
+      "MinCertainty": 3,
+      "Meters": {
+        "humor": { "Weight": 1 },
+        "tenderness": { "Weight": 0.5 }
+      },
+      "Rules": [
+        {
+          "Name": "family of the spouse",
+          "When": { "Role": ["relative"] },
+          "Set": { "humor": 0.3, "tenderness": 2 },
+          "Phrases": { "Full": "{actor} kissing {target} out in the open, happy together" }
+        },
+        {
+          "Name": "a child saw it",
+          "When": { "NearbyAge": { "Age": "child", "Tiles": 6 } },
+          "Multiply": { "humor": 1.5 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} kissing {target} right there in {location}, in front of everyone",
+        "Reduced": "{actor} kissing {target}",
+        "Glimpse": "a couple kissing in {location}",
+        "Past": "{actor} kissed {target} in public, in {location}"
+      },
+      "Bubble": {
+        "Emote": "blush",
+        "Chance": 0.8,
+        "WalkUpFromLevel": 2,
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.kiss.default.1",
+            "seenAndHeard.bubble.kiss.default.2",
+            "seenAndHeard.bubble.kiss.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.kiss.friend.1",
+            "seenAndHeard.bubble.kiss.friend.2"
+          ],
+          "child": [
+            "seenAndHeard.bubble.kiss.child.1",
+            "seenAndHeard.bubble.kiss.child.2"
+          ]
+        }
+      }
+    },
+
+    "swim": {
+      "Grade": 2,
+      "HalfLifeDays": 1,
+      "RangeTiles": 8,
+      "MinCertainty": 2,
+      "Meters": {
+        "humor": { "Weight": 0.5 },
+        "tenderness": { "Weight": 0.3 }
+      },
+      "Phrases": {
+        "Full": "{actor} swimming in {location}[ with {p:withNpcs} in the water too]",
+        "Reduced": "{actor} swimming nearby",
+        "Glimpse": "someone splashing about in the water",
+        "Past": "{actor} went swimming in {location}[ alongside {p:withNpcs}]"
+      },
+      "Bubble": {
+        "Emote": "happy",
+        "MinCertainty": 2,
+        "WalkUpFromLevel": 3,
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.swim.default.1",
+            "seenAndHeard.bubble.swim.default.2",
+            "seenAndHeard.bubble.swim.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.swim.friend.1",
+            "seenAndHeard.bubble.swim.friend.2"
+          ],
+          "partner": [
+            "seenAndHeard.bubble.swim.partner.1",
+            "seenAndHeard.bubble.swim.partner.2"
+          ],
+          "spouse": [
+            "seenAndHeard.bubble.swim.spouse.1",
+            "seenAndHeard.bubble.swim.spouse.2"
+          ]
+        }
+      }
+    },
+
+    "argue": {
+      "Grade": 5,
+      "HalfLifeDays": 5,
+      "RangeTiles": 8,
+      "MinCertainty": 3,
+      "Meters": {
+        "confront": { "Weight": 1.5 }
+      },
+      "Rules": [
+        {
+          "Name": "family of the one insulted",
+          "When": { "Role": ["relative"] },
+          "Multiply": { "confront": 2 },
+          "Phrases": { "Full": "{actor} laying into {target} — their own family — right there in the open" }
+        },
+        {
+          "Name": "the farmer's partner saw it",
+          "When": { "PlayerPartner": true },
+          "Multiply": { "confront": 1.5 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} having a heated argument with {target}[ — {actor} said \"{p:said}\"]",
+        "Reduced": "{actor} raising their voice at {target}",
+        "Glimpse": "someone arguing with {target}",
+        "Past": "{actor} had an argument with {target}"
+      },
+      "Bubble": {
+        "Emote": "exclamation",
+        "WalkUpFromLevel": 2,
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.argue.default.1",
+            "seenAndHeard.bubble.argue.default.2",
+            "seenAndHeard.bubble.argue.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.argue.friend.1",
+            "seenAndHeard.bubble.argue.friend.2"
+          ]
+        }
+      }
+    },
+
+    "flirt": {
+      "Grade": 5,
+      "HalfLifeDays": 7,
+      "RangeTiles": 10,
+      "MinCertainty": 3,
+      "Meters": {
+        "confront": { "Weight": 2.5, "Roles": ["target"] },
+        "humor": { "Weight": 0.8, "Roles": ["bystander", "relative"] }
+      },
+      "Rules": [
+        {
+          "Name": "the partner saw it themselves",
+          "When": { "Role": ["target"], "MinCertainty": 4 },
+          "Multiply": { "confront": 1.5 }
+        },
+        {
+          "Name": "family of the partner",
+          "When": { "Role": ["relative"] },
+          "Set": { "humor": 0, "confront": 1.5 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} flirting with {n:with} while {ownersPlain}, who they are seeing, was close enough to see it",
+        "Reduced": "{actor} flirting with {n:with} with {ownersPlain} nearby",
+        "Glimpse": "{actor} being very friendly with someone",
+        "Past": "{actor} flirted with {n:with} right under {owners} nose"
+      },
+      "Bubble": {
+        "Emote": "angry",
+        "WalkUpFromLevel": 2,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.flirt.default.1",
+            "seenAndHeard.bubble.flirt.default.2",
+            "seenAndHeard.bubble.flirt.default.3"
+          ],
+          "partner": [
+            "seenAndHeard.bubble.flirt.partner.1",
+            "seenAndHeard.bubble.flirt.partner.2"
+          ],
+          "spouse": [
+            "seenAndHeard.bubble.flirt.spouse.1",
+            "seenAndHeard.bubble.flirt.spouse.2"
+          ]
+        }
+      }
+    },
+
+    "sit": {
+      "Grade": 3,
+      "HalfLifeDays": 3,
+      "RangeTiles": -1,
+      "MinCertainty": 2,
+      "Meters": {
+        "confront": { "Weight": 0.8, "Roles": ["target"] },
+        "humor": { "Weight": 0.3 }
+      },
+      "Rules": [
+        {
+          "Name": "a friend making themselves at home",
+          "When": { "Role": ["target"], "MinHearts": 4 },
+          "Multiply": { "confront": 0 },
+          "Set": { "tenderness": 0.5 },
+          "Phrases": { "Full": "{actor} settling onto the {p:seat} at {owners} place like one of the family" }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} plonking themselves down on the {p:seat} in {owners} house, uninvited",
+        "Reduced": "{actor} sitting on {owners} furniture",
+        "Glimpse": "someone lounging in the house",
+        "Past": "{actor} sat down on the {p:seat} in {owners} house as if it were theirs"
+      },
+      "Bubble": {
+        "Emote": "question",
+        "WalkUpFromLevel": 2,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.sit.default.1",
+            "seenAndHeard.bubble.sit.default.2",
+            "seenAndHeard.bubble.sit.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.sit.friend.1",
+            "seenAndHeard.bubble.sit.friend.2"
+          ],
+          "partner": [
+            "seenAndHeard.bubble.sit.partner.1",
+            "seenAndHeard.bubble.sit.partner.2"
+          ]
+        }
+      }
+    },
+
+    "use_appliance": {
+      "Grade": 3,
+      "HalfLifeDays": 3,
+      "RangeTiles": -1,
+      "MinCertainty": 2,
+      "Meters": {
+        "confront": { "Weight": 1, "Roles": ["target"] },
+        "humor": { "Weight": 0.3 }
+      },
+      "VariantBy": "p:kind",
+      "Variants": {
+        "tv": {
+          "Full": "{actor} switching on the TV in {owners} house and settling in as if it were their own",
+          "Reduced": "{actor} messing with {owners} TV",
+          "Glimpse": "someone fiddling with the TV",
+          "Past": "{actor} switched on the TV in {owners} house"
+        },
+        "fireplace": {
+          "Full": "{actor} fiddling with the fireplace in {owners} house",
+          "Reduced": "{actor} messing with {owners} fireplace",
+          "Glimpse": "someone at the fireplace",
+          "Past": "{actor} fiddled with the fireplace in {owners} house"
+        }
+      },
+      "Rules": [
+        {
+          "Name": "trusted in the house",
+          "When": { "Role": ["target"], "MinHearts": 6 },
+          "Multiply": { "confront": 0.25 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} switching the lights {p:state} in {owners} house as if they lived there",
+        "Reduced": "{actor} playing with {owners} lights",
+        "Glimpse": "someone fiddling with the lights",
+        "Past": "{actor} switched the lights {p:state} in {owners} house"
+      },
+      "Bubble": {
+        "Emote": "exclamation",
+        "WalkUpFromLevel": 2,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.use_appliance.default.1",
+            "seenAndHeard.bubble.use_appliance.default.2",
+            "seenAndHeard.bubble.use_appliance.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.use_appliance.friend.1",
+            "seenAndHeard.bubble.use_appliance.friend.2"
+          ]
+        }
+      }
+    },
+
+    "snoop": {
+      "Grade": 6,
+      "HalfLifeDays": 10,
+      "RangeTiles": -1,
+      "MinCertainty": 2,
+      "Meters": {
+        "confront": { "Weight": 2, "Roles": ["target"] },
+        "humor": { "Weight": 0.2 }
+      },
+      "VariantBy": "p:kind",
+      "Variants": {
+        "dresser": {
+          "Full": "{actor} opening a dresser in {owners} house and going through what was inside",
+          "Reduced": "{actor} going through {owners} drawers",
+          "Glimpse": "someone rummaging in the house",
+          "Past": "{actor} went through the dresser in {owners} house"
+        },
+        "letter": {
+          "Full": "{actor} reading a letter lying around in {owners} house that was not theirs to read",
+          "Reduced": "{actor} reading {owners} mail",
+          "Glimpse": "someone reading something in the house",
+          "Past": "{actor} read a letter in {owners} house that was not theirs"
+        }
+      },
+      "Rules": [
+        {
+          "Name": "caught in the act",
+          "When": { "Role": ["target"], "Payload": { "ownerPresent": "true" } },
+          "Multiply": { "confront": 1.5 }
+        },
+        {
+          "Name": "family of the owner",
+          "When": { "Role": ["relative"] },
+          "Set": { "confront": 1 }
+        }
+      ],
+      "Phrases": {
+        "Full": "{actor} poking through the notes and things in {owners} house that were not theirs to read",
+        "Reduced": "{actor} going through {owners} things",
+        "Glimpse": "someone poking around the house",
+        "Past": "{actor} went through private things in {owners} house"
+      },
+      "Bubble": {
+        "Emote": "angry",
+        "WalkUpFromLevel": 2,
+        "Roles": [
+          "target"
+        ],
+        "Lines": {
+          "default": [
+            "seenAndHeard.bubble.snoop.default.1",
+            "seenAndHeard.bubble.snoop.default.2",
+            "seenAndHeard.bubble.snoop.default.3"
+          ],
+          "friend": [
+            "seenAndHeard.bubble.snoop.friend.1",
+            "seenAndHeard.bubble.snoop.friend.2"
+          ],
+          "partner": [
+            "seenAndHeard.bubble.snoop.partner.1",
+            "seenAndHeard.bubble.snoop.partner.2"
+          ]
+        }
+      }
+    }
+  }
+}
