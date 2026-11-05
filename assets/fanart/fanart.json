@@ -1,0 +1,33 @@
+{
+  "artists": {
+    "bolopuffs": {
+      "name": "bolopuffs",
+      "link": "https://www.instagram.com/bolopuffs/",
+      "permission": "Autorização recebida do artista (2026-10-09)."
+    },
+    "victornashi": {
+      "name": "Victor Nashi",
+      "link": "https://www.instagram.com/p/DatjXL8DmCd/",
+      "permission": "Autorização recebida do artista (2026-10-09)."
+    },
+    "andyillustra": {
+      "name": "Andy Illustra",
+      "link": "https://www.behance.net/andyillustra",
+      "permission": "Autorização recebida do artista (2026-10-09)."
+    },
+    "acarts": {
+      "name": "ACarts",
+      "link": "https://www.instagram.com/ac.artss/",
+      "permission": "Autorização recebida do artista (2026-10-09).",
+      "intro": "Curto desenhar, games e desenhar personagens de games!"
+    }
+  },
+  "covers": [
+    { "file": "Covers/cover_victornashi_01.png", "artist": "victornashi" }
+  ],
+  "art": [
+    { "file": "Harvey/harvey_bolopuffs_01.png", "npc": "Harvey", "artist": "bolopuffs" },
+    { "file": "Haley/haley_andyillustra_01.png", "npc": "Haley", "artist": "andyillustra" },
+    { "file": "Haley/haley_acarts_01.png", "npc": "Haley", "artist": "acarts" }
+  ]
+}
