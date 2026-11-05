@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "npcs": {
+    "Abigail": [
+      { "location": "SeedShop", "weight": 4, "kind": "home", "reason": "Abigail lives above Pierre's shop." },
+      { "location": "Mountain", "weight": 3, "kind": "habit", "reason": "Abigail is drawn to adventure near the mountain." }
+    ],
+    "Alex": [
+      { "location": "JoshHouse", "weight": 4, "kind": "home", "reason": "Alex lives with Evelyn and George." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Alex often belongs in public town scenes." }
+    ],
+    "Caroline": [
+      { "location": "SeedShop", "weight": 4, "kind": "home", "reason": "Caroline lives above the general store." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Caroline is tied to town community life." }
+    ],
+    "Clint": [
+      { "location": "Blacksmith", "weight": 4, "kind": "work", "reason": "Clint works at the blacksmith." },
+      { "location": "Saloon", "weight": 2, "kind": "habit", "reason": "Clint has recurring social scenes at the Saloon." }
+    ],
+    "Demetrius": [
+      { "location": "ScienceHouse", "weight": 4, "kind": "home", "reason": "Demetrius lives and researches at the mountain house." },
+      { "location": "Mountain", "weight": 3, "kind": "work", "reason": "Demetrius studies the mountain environment." }
+    ],
+    "Dwarf": [
+      { "location": "Mine", "weight": 4, "kind": "home", "reason": "The Dwarf is connected to the mines." },
+      { "location": "Mountain", "weight": 2, "kind": "public", "reason": "The mountain is the safe exterior fallback for mine-linked scenes." }
+    ],
+    "Elliott": [
+      { "location": "ElliottHouse", "weight": 4, "kind": "home", "reason": "Elliott lives in the beach cabin." },
+      { "location": "Beach", "weight": 3, "kind": "habit", "reason": "Elliott is strongly tied to the beach." }
+    ],
+    "Emily": [
+      { "location": "HaleyHouse", "weight": 4, "kind": "home", "reason": "Emily lives with Haley." },
+      { "location": "Saloon", "weight": 3, "kind": "work", "reason": "Emily works at the Saloon." }
+    ],
+    "Evelyn": [
+      { "location": "JoshHouse", "weight": 4, "kind": "home", "reason": "Evelyn lives with George and Alex." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Evelyn is part of town community life." }
+    ],
+    "George": [
+      { "location": "JoshHouse", "weight": 4, "kind": "home", "reason": "George lives with Evelyn and Alex." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "George's family ties still anchor him to town." }
+    ],
+    "Gus": [
+      { "location": "Saloon", "weight": 4, "kind": "work", "reason": "Gus runs the Saloon." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Gus is a community anchor." }
+    ],
+    "Haley": [
+      { "location": "HaleyHouse", "weight": 4, "kind": "home", "reason": "Haley lives with Emily." },
+      { "location": "Beach", "weight": 2, "kind": "habit", "reason": "Haley has beach and photography associations." }
+    ],
+    "Harvey": [
+      { "location": "Hospital", "weight": 4, "kind": "work", "reason": "Harvey runs the clinic." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Harvey serves the town." }
+    ],
+    "Jas": [
+      { "location": "AnimalShop", "weight": 4, "kind": "home", "reason": "Jas lives at Marnie's ranch." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Jas can safely resolve public scenes in town." }
+    ],
+    "Jodi": [
+      { "location": "SamHouse", "weight": 4, "kind": "home", "reason": "Jodi lives with Sam, Kent, and Vincent." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Jodi is tied to town family life." }
+    ],
+    "Kent": [
+      { "location": "SamHouse", "weight": 4, "kind": "home", "reason": "Kent lives with Jodi, Sam, and Vincent." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Kent's civilian life reconnects him to town." }
+    ],
+    "Krobus": [
+      { "location": "Sewer", "weight": 4, "kind": "home", "reason": "Krobus lives in the sewers." },
+      { "location": "Town", "weight": 1, "kind": "public", "reason": "Town is a safe fallback until sewer staging is supported." }
+    ],
+    "Leah": [
+      { "location": "LeahHouse", "weight": 4, "kind": "home", "reason": "Leah lives in the forest cottage." },
+      { "location": "Forest", "weight": 3, "kind": "habit", "reason": "Leah is tied to Cindersap Forest." }
+    ],
+    "Leo": [
+      { "location": "Beach", "weight": 3, "kind": "habit", "reason": "Leo's safe non-island fallback is the beach." },
+      { "location": "Mountain", "weight": 2, "kind": "habit", "reason": "The mountain works as a nature-linked fallback for Leo." }
+    ],
+    "Lewis": [
+      { "location": "ManorHouse", "weight": 4, "kind": "home", "reason": "Lewis lives in the mayor's manor." },
+      { "location": "Town", "weight": 3, "kind": "work", "reason": "Lewis is the mayor and public face of town." }
+    ],
+    "Linus": [
+      { "location": "Mountain", "weight": 4, "kind": "home", "reason": "Linus lives in the mountain area." },
+      { "location": "Forest", "weight": 2, "kind": "habit", "reason": "Linus is at home in natural spaces." }
+    ],
+    "Marnie": [
+      { "location": "AnimalShop", "weight": 4, "kind": "home", "reason": "Marnie lives and works at the ranch." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Marnie has community ties in town." }
+    ],
+    "Maru": [
+      { "location": "ScienceHouse", "weight": 4, "kind": "home", "reason": "Maru lives in the mountain house." },
+      { "location": "Hospital", "weight": 3, "kind": "work", "reason": "Maru works at the clinic." }
+    ],
+    "Pam": [
+      { "location": "Trailer", "weight": 4, "kind": "home", "reason": "Pam lives in the trailer." },
+      { "location": "BusStop", "weight": 3, "kind": "work", "reason": "Pam is tied to the bus route." }
+    ],
+    "Penny": [
+      { "location": "Trailer", "weight": 4, "kind": "home", "reason": "Penny lives with Pam in the trailer." },
+      { "location": "ArchaeologyHouse", "weight": 3, "kind": "work", "reason": "Penny tutors children at the library." }
+    ],
+    "Pierre": [
+      { "location": "SeedShop", "weight": 4, "kind": "home", "reason": "Pierre lives and works at the general store." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Pierre is tied to town commerce." }
+    ],
+    "Qi": [
+      { "location": "Desert", "weight": 4, "kind": "work", "reason": "Mr. Qi is tied to hidden desert challenges." },
+      { "location": "Mine", "weight": 2, "kind": "habit", "reason": "Mr. Qi also fits challenge spaces." }
+    ],
+    "Robin": [
+      { "location": "ScienceHouse", "weight": 4, "kind": "home", "reason": "Robin lives and works at the mountain house." },
+      { "location": "Mountain", "weight": 3, "kind": "work", "reason": "Robin's carpentry shop anchors her to the mountain." }
+    ],
+    "Sam": [
+      { "location": "SamHouse", "weight": 4, "kind": "home", "reason": "Sam lives with Jodi, Kent, and Vincent." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Sam's social life often happens in town." }
+    ],
+    "Sandy": [
+      { "location": "Desert", "weight": 4, "kind": "home", "reason": "Sandy runs the Oasis in the desert." },
+      { "location": "Saloon", "weight": 1, "kind": "public", "reason": "Saloon is a safe social fallback for Sandy-linked arcs." }
+    ],
+    "Sebastian": [
+      { "location": "ScienceHouse", "weight": 4, "kind": "home", "reason": "Sebastian lives in the mountain house." },
+      { "location": "Mountain", "weight": 3, "kind": "habit", "reason": "Sebastian is tied to the mountain area." }
+    ],
+    "Shane": [
+      { "location": "AnimalShop", "weight": 4, "kind": "home", "reason": "Shane lives at Marnie's ranch." },
+      { "location": "Saloon", "weight": 2, "kind": "habit", "reason": "The Saloon is a recurring part of Shane's story." }
+    ],
+    "Vincent": [
+      { "location": "SamHouse", "weight": 4, "kind": "home", "reason": "Vincent lives with Jodi, Kent, and Sam." },
+      { "location": "Town", "weight": 2, "kind": "public", "reason": "Vincent's school and family life connect him to town." }
+    ],
+    "Willy": [
+      { "location": "FishShop", "weight": 4, "kind": "work", "reason": "Willy runs the fish shop." },
+      { "location": "Beach", "weight": 3, "kind": "habit", "reason": "Willy belongs by the sea." }
+    ],
+    "Wizard": [
+      { "location": "WizardHouse", "weight": 4, "kind": "home", "reason": "The Wizard lives in the tower." },
+      { "location": "Forest", "weight": 2, "kind": "habit", "reason": "The tower sits in the forest." }
+    ]
+  }
+}
