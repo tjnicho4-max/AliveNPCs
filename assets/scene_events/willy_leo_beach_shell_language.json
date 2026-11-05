@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.willy_leo_beach_shell_language",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.willy_leo_beach_shell_language.title",
+  "location": "Beach",
+  "eventKey": "9702264",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Willy": 6,
+      "Leo": 6
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 79
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.willy_leo_beach_shell_language.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.willy_leo_beach_shell_language.memoryText"
+  }
+}

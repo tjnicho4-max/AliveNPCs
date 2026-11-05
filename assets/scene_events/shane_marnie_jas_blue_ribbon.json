@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.shane_marnie_jas_blue_ribbon",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.shane_marnie_jas_blue_ribbon.title",
+  "location": "AnimalShop",
+  "eventKey": "9702283",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Shane": 8,
+      "Marnie": 8,
+      "Jas": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.shane_marnie_jas_blue_ribbon.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.shane_marnie_jas_blue_ribbon.memoryText"
+  }
+}

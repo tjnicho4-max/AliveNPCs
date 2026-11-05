@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.penny_ten_home_books",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.penny_ten_home_books.title",
+  "location": "ArchaeologyHouse",
+  "eventKey": "9702299",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Penny": 10
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 127
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.penny_ten_home_books.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.penny_ten_home_books.memoryText"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.pam_penny_busstop_ticket_stub",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.pam_penny_busstop_ticket_stub.title",
+  "location": "BusStop",
+  "eventKey": "9702263",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Pam": 6,
+      "Penny": 6
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 79
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.pam_penny_busstop_ticket_stub.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.pam_penny_busstop_ticket_stub.memoryText"
+  }
+}

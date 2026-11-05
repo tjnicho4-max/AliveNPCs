@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sebastian.sciencehouse_keyboard_clicks",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sebastian.sciencehouse_keyboard_clicks.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702132",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Sebastian": 3
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1800,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sebastian.sciencehouse_keyboard_clicks.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.sebastian.sciencehouse_keyboard_clicks.memoryText"
+  }
+}

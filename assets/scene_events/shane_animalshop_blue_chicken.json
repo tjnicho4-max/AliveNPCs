@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.shane.animalshop_blue_chicken",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.shane.animalshop_blue_chicken.title",
+  "location": "AnimalShop",
+  "eventKey": "9702111",
+  "weight": 70,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Shane": 8
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.shane.animalshop_blue_chicken.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.shane.animalshop_blue_chicken.memoryText"
+  }
+}

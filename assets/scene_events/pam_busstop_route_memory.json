@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.pam.busstop_route_memory",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.pam.busstop_route_memory.title",
+  "location": "BusStop",
+  "eventKey": "9702128",
+  "weight": 70,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Pam": 2
+    },
+    "minDaysPlayed": 20,
+    "chance": 0.5
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.pam.busstop_route_memory.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.pam.busstop_route_memory.memoryText"
+  }
+}

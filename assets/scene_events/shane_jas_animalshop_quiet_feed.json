@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.shane_jas_animalshop_quiet_feed",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.shane_jas_animalshop_quiet_feed.title",
+  "location": "AnimalShop",
+  "eventKey": "9702266",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Shane": 6,
+      "Jas": 6
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 79
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.shane_jas_animalshop_quiet_feed.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.shane_jas_animalshop_quiet_feed.memoryText"
+  }
+}

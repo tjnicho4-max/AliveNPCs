@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sebastian.mountain_rain_frog",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sebastian.mountain_rain_frog.title",
+  "location": "Mountain",
+  "eventKey": "9702103",
+  "weight": 70,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "weather": [
+      "Rainy",
+      "Stormy"
+    ],
+    "minHearts": {
+      "Sebastian": 2
+    },
+    "chance": 0.75
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2200
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sebastian.mountain_rain_frog.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.sebastian.mountain_rain_frog.memoryText"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.wizard_krobus_dwarf_tunnel_map",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.wizard_krobus_dwarf_tunnel_map.title",
+  "location": "Mine",
+  "eventKey": "9702288",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Wizard": 8,
+      "Krobus": 8,
+      "Dwarf": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 2200
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.wizard_krobus_dwarf_tunnel_map.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.wizard_krobus_dwarf_tunnel_map.memoryText"
+  }
+}

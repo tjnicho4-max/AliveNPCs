@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.penny_pam_gus_second_chance_soup",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.penny_pam_gus_second_chance_soup.title",
+  "location": "Saloon",
+  "eventKey": "9702284",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Penny": 8,
+      "Pam": 8,
+      "Gus": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.penny_pam_gus_second_chance_soup.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.penny_pam_gus_second_chance_soup.memoryText"
+  }
+}

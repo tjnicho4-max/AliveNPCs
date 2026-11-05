@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.willy.beach_old_lure_box",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.willy.beach_old_lure_box.title",
+  "location": "Beach",
+  "eventKey": "9702149",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Willy": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 600,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.willy.beach_old_lure_box.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

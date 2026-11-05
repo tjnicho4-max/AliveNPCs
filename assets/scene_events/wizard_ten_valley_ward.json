@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.wizard_ten_valley_ward",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.wizard_ten_valley_ward.title",
+  "location": "WizardHouse",
+  "eventKey": "9702300",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Wizard": 10
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 127
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 2200
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.wizard_ten_valley_ward.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.wizard_ten_valley_ward.memoryText"
+  }
+}

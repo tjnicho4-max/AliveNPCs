@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.penny_maru_library_robot_manners",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.penny_maru_library_robot_manners.title",
+  "location": "ArchaeologyHouse",
+  "eventKey": "9702246",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Penny": 4,
+      "Maru": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.penny_maru_library_robot_manners.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.penny_maru_library_robot_manners.memoryText"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.pierre.town_coupon_panic",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.pierre.town_coupon_panic.title",
+  "location": "Town",
+  "eventKey": "9702143",
+  "weight": 90,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Pierre": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.pierre.town_coupon_panic.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

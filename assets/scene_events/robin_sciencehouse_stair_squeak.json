@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.robin.sciencehouse_stair_squeak",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.robin.sciencehouse_stair_squeak.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702117",
+  "weight": 95,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Robin": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.robin.sciencehouse_stair_squeak.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

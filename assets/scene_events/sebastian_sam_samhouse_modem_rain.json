@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sebastian_sam_samhouse_modem_rain",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sebastian_sam_samhouse_modem_rain.title",
+  "location": "SamHouse",
+  "eventKey": "9702253",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Sebastian": 5,
+      "Sam": 5
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 67,
+    "weather": [
+      "Rainy",
+      "Stormy"
+    ]
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sebastian_sam_samhouse_modem_rain.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.sebastian_sam_samhouse_modem_rain.memoryText"
+  }
+}

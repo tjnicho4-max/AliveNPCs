@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.robin.mountain_bridge_note",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.robin.mountain_bridge_note.title",
+  "location": "Mountain",
+  "eventKey": "9702146",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Robin": 2
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.robin.mountain_bridge_note.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.robin.mountain_bridge_note.memoryText"
+  }
+}

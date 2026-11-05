@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sandy_emily_haley_desert_color",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sandy_emily_haley_desert_color.title",
+  "location": "Desert",
+  "eventKey": "9702273",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Sandy": 7,
+      "Emily": 7,
+      "Haley": 7
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 91
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sandy_emily_haley_desert_color.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.sandy_emily_haley_desert_color.memoryText"
+  }
+}

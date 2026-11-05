@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sebastian_sam_abigail_mountain_echo",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sebastian_sam_abigail_mountain_echo.title",
+  "location": "Mountain",
+  "eventKey": "9702232",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Sebastian": 3,
+      "Sam": 3,
+      "Abigail": 3
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 43
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sebastian_sam_abigail_mountain_echo.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.penny_vincent_library_map_lesson",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.penny_vincent_library_map_lesson.title",
+  "location": "ArchaeologyHouse",
+  "eventKey": "9702212",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Penny": 1,
+      "Vincent": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.penny_vincent_library_map_lesson.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

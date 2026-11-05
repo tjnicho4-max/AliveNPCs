@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.penny_jas_library_pressed_flower",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.penny_jas_library_pressed_flower.title",
+  "location": "ArchaeologyHouse",
+  "eventKey": "9702223",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Penny": 2,
+      "Jas": 2
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 31
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.penny_jas_library_pressed_flower.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

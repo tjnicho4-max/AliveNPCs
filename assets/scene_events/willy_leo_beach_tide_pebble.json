@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.willy_leo_beach_tide_pebble",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.willy_leo_beach_tide_pebble.title",
+  "location": "Beach",
+  "eventKey": "9702220",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Willy": 1,
+      "Leo": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.willy_leo_beach_tide_pebble.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

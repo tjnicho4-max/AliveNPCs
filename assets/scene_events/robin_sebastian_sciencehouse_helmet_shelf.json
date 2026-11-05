@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.robin_sebastian_sciencehouse_helmet_shelf",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.robin_sebastian_sciencehouse_helmet_shelf.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702239",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Robin": 3,
+      "Sebastian": 3
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 43
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.robin_sebastian_sciencehouse_helmet_shelf.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

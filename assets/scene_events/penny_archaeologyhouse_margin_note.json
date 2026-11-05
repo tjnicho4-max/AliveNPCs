@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.penny.archaeologyhouse_margin_note",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.penny.archaeologyhouse_margin_note.title",
+  "location": "ArchaeologyHouse",
+  "eventKey": "9702108",
+  "weight": 85,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Penny": 2
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.penny.archaeologyhouse_margin_note.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.penny.archaeologyhouse_margin_note.memoryText"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.robin_lewis_communitycenter_floorboard",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.robin_lewis_communitycenter_floorboard.title",
+  "location": "CommunityCenter",
+  "eventKey": "9702274",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Robin": 7,
+      "Lewis": 7
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 91
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.robin_lewis_communitycenter_floorboard.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.robin_lewis_communitycenter_floorboard.memoryText"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sebastian_robin_maru_family_blueprint",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sebastian_robin_maru_family_blueprint.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702281",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Sebastian": 8,
+      "Robin": 8,
+      "Maru": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sebastian_robin_maru_family_blueprint.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.sebastian_robin_maru_family_blueprint.memoryText"
+  }
+}

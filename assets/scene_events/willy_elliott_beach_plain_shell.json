@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.willy_elliott_beach_plain_shell",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.willy_elliott_beach_plain_shell.title",
+  "location": "Beach",
+  "eventKey": "9702209",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Willy": 0,
+      "Elliott": 0
+    },
+    "chance": 0.55,
+    "maxHearts": {
+      "Willy": 0,
+      "Elliott": 0
+    }
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.willy_elliott_beach_plain_shell.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

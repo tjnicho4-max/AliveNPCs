@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.robin_maru_sciencehouse_sensor_saw",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.robin_maru_sciencehouse_sensor_saw.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702251",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Robin": 5,
+      "Maru": 5
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 67
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.robin_maru_sciencehouse_sensor_saw.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.robin_maru_sciencehouse_sensor_saw.memoryText"
+  }
+}

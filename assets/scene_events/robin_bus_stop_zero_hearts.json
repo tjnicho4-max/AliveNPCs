@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.robin.bus_stop_zero_hearts",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.robin.bus_stop_zero_hearts.title",
+  "location": "BusStop",
+  "eventKey": "9702001",
+  "weight": 100,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Robin": 0
+    },
+    "maxHearts": {
+      "Robin": 0
+    },
+    "chance": 1
+  },
+  "entryConditions": {
+    "time": {
+      "min": 600,
+      "max": 2600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.robin.bus_stop_zero_hearts.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

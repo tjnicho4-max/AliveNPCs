@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.robin_demetrius_mountain_bridge_measure",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.robin_demetrius_mountain_bridge_measure.title",
+  "location": "Mountain",
+  "eventKey": "9702221",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Robin": 2,
+      "Demetrius": 2
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 31
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.robin_demetrius_mountain_bridge_measure.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

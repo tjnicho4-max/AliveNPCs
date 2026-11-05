@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.willy.beach_odd_tide",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.willy.beach_odd_tide.title",
+  "location": "Beach",
+  "eventKey": "9702120",
+  "weight": 75,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "weather": [
+      "Sunny",
+      "Rainy"
+    ],
+    "minHearts": {
+      "Willy": 2
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 600,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.willy.beach_odd_tide.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.willy.beach_odd_tide.memoryText"
+  }
+}

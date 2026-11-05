@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.shane_gus_saloon_slow_heat",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.shane_gus_saloon_slow_heat.title",
+  "location": "Saloon",
+  "eventKey": "9702245",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Shane": 4,
+      "Gus": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.shane_gus_saloon_slow_heat.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.shane_gus_saloon_slow_heat.memoryText"
+  }
+}

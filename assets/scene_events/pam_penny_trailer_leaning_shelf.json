@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.pam_penny_trailer_leaning_shelf",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.pam_penny_trailer_leaning_shelf.title",
+  "location": "Trailer",
+  "eventKey": "9702243",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Pam": 4,
+      "Penny": 4
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.pam_penny_trailer_leaning_shelf.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.pam_penny_trailer_leaning_shelf.memoryText"
+  }
+}

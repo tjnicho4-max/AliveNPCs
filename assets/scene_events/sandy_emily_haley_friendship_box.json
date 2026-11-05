@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sandy_emily_haley_friendship_box",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sandy_emily_haley_friendship_box.title",
+  "location": "Desert",
+  "eventKey": "9702290",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Sandy": 8,
+      "Emily": 8,
+      "Haley": 8
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 103
+  },
+  "entryConditions": {
+    "time": {
+      "min": 700,
+      "max": 1900
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sandy_emily_haley_friendship_box.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.sandy_emily_haley_friendship_box.memoryText"
+  }
+}

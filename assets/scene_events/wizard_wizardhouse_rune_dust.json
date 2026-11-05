@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.wizard.wizardhouse_rune_dust",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.wizard.wizardhouse_rune_dust.title",
+  "location": "WizardHouse",
+  "eventKey": "9702129",
+  "weight": 60,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Wizard": 2
+    },
+    "minDaysPlayed": 20,
+    "chance": 0.45
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 2200
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.wizard.wizardhouse_rune_dust.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.wizard.wizardhouse_rune_dust.memoryText"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sebastian_ten_city_postcard",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sebastian_ten_city_postcard.title",
+  "location": "ScienceHouse",
+  "eventKey": "9702296",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Sebastian": 10
+    },
+    "chance": 0.2,
+    "minDaysPlayed": 127
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sebastian_ten_city_postcard.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.sebastian_ten_city_postcard.memoryText"
+  }
+}

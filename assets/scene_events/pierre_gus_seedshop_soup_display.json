@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.pierre_gus_seedshop_soup_display",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.pierre_gus_seedshop_soup_display.title",
+  "location": "SeedShop",
+  "eventKey": "9702215",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Pierre": 1,
+      "Gus": 1
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.pierre_gus_seedshop_soup_display.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

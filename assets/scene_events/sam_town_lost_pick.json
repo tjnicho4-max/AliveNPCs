@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sam.town_lost_pick",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sam.town_lost_pick.title",
+  "location": "Town",
+  "eventKey": "9702102",
+  "weight": 90,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "minHearts": {
+      "Sam": 1
+    },
+    "chance": 0.65
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1100,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sam.town_lost_pick.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

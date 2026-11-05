@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.willy_gus_saloon_stew_salt",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.willy_gus_saloon_stew_salt.title",
+  "location": "Saloon",
+  "eventKey": "9702235",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Willy": 3,
+      "Gus": 3
+    },
+    "chance": 0.55,
+    "minDaysPlayed": 43
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2400
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.willy_gus_saloon_stew_salt.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

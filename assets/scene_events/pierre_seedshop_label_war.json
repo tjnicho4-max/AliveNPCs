@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.pierre.seedshop_label_war",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.pierre.seedshop_label_war.title",
+  "location": "SeedShop",
+  "eventKey": "9702114",
+  "weight": 95,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Pierre": 1
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1700
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.pierre.seedshop_label_war.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

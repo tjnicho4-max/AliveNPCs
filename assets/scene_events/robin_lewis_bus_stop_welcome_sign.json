@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.robin_lewis_bus_stop_welcome_sign",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.robin_lewis_bus_stop_welcome_sign.title",
+  "location": "BusStop",
+  "eventKey": "9702201",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Robin": 0,
+      "Lewis": 0
+    },
+    "chance": 0.55,
+    "maxHearts": {
+      "Robin": 0,
+      "Lewis": 0
+    }
+  },
+  "entryConditions": {
+    "time": {
+      "min": 800,
+      "max": 2000
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.robin_lewis_bus_stop_welcome_sign.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

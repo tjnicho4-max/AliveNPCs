@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.pierre_abigail_caroline_family_shelf",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.pierre_abigail_caroline_family_shelf.title",
+  "location": "SeedShop",
+  "eventKey": "9702277",
+  "weight": 80,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Pierre": 7,
+      "Abigail": 7,
+      "Caroline": 7
+    },
+    "chance": 0.35,
+    "minDaysPlayed": 91
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.pierre_abigail_caroline_family_shelf.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.pierre_abigail_caroline_family_shelf.memoryText"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.sam.samhouse_band_name",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.sam.samhouse_band_name.title",
+  "location": "SamHouse",
+  "eventKey": "9702131",
+  "weight": 90,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "minHearts": {
+      "Sam": 2
+    },
+    "chance": 0.6
+  },
+  "entryConditions": {
+    "time": {
+      "min": 1200,
+      "max": 2100
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.sam.samhouse_band_name.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.penny.trailer_window_garden",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.penny.trailer_window_garden.title",
+  "location": "Trailer",
+  "eventKey": "9702137",
+  "weight": 70,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "minHearts": {
+      "Penny": 3
+    },
+    "chance": 0.55
+  },
+  "entryConditions": {
+    "time": {
+      "min": 900,
+      "max": 1800
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.penny.trailer_window_garden.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": true,
+    "memoryText": "",
+    "memoryTextKey": "sceneEvents.alive.penny.trailer_window_garden.memoryText"
+  }
+}
