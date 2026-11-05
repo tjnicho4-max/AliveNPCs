@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alive.experimental.vampire_intro",
+  "enabled": true,
+  "title": "",
+  "titleKey": "sceneEvents.alive.experimental.vampire_intro.title",
+  "location": "Farm",
+  "eventKey": "9702305",
+  "weight": 100,
+  "maxTriggersPerSave": 1,
+  "cooldownDays": 0,
+  "dailyConditions": {
+    "experimentalDialogueModes": [
+      "Vampire"
+    ],
+    "chance": 1
+  },
+  "entryConditions": {
+    "time": {
+      "min": 600,
+      "max": 2600
+    }
+  },
+  "scene": {
+    "scriptKey": "sceneEvents.alive.experimental.vampire_intro.script",
+    "script": "",
+    "branches": {}
+  },
+  "completion": {
+    "markSeen": true,
+    "recordMemory": false,
+    "memoryText": "",
+    "memoryTextKey": ""
+  }
+}
