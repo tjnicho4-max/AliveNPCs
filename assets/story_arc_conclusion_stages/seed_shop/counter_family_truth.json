@@ -1,0 +1,36 @@
+{
+  "stageId": "seed_shop/counter_family_truth",
+  "title": "General Store Counter",
+  "location": "SeedShop",
+  "sceneTypes": ["family", "truth", "community", "reconciliation"],
+  "allowedArcTags": ["family", "truth", "community", "trust", "shop", "reconciliation"],
+  "blockedArcTags": [],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "spring_day",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "shop",
+    "primaryColor": "6c5536",
+    "secondaryColor": "3d2d20",
+    "floorColor": "8b6a3f",
+    "accentColor": "d1a85b",
+    "detailColor": "e8d4a0"
+  },
+  "eventLayout": {
+    "camera": { "x": 8, "y": 17 },
+    "farmer": { "x": 7, "y": 17, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 9, "y": 17, "facing": "left" },
+      { "slot": "speaker_2", "x": 10, "y": 17, "facing": "left" },
+      { "slot": "speaker_3", "x": 8, "y": 16, "facing": "down" },
+      { "slot": "speaker_4", "x": 11, "y": 16, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.38, "y": 0.54, "scale": 1.05, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.55, "y": 0.54, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.46, "y": 0.42, "scale": 0.92, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.67, "y": 0.43, "scale": 0.88, "facing": "down" }
+  ]
+}

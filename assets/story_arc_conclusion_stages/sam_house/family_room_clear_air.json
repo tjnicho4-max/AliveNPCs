@@ -1,0 +1,36 @@
+{
+  "stageId": "sam_house/family_room_clear_air",
+  "title": "Sam's Family Room",
+  "location": "SamHouse",
+  "sceneTypes": ["family", "support", "reconciliation"],
+  "allowedArcTags": ["family", "trust", "support", "reconciliation", "home", "friendship"],
+  "blockedArcTags": ["public"],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "spring_day",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "home",
+    "primaryColor": "5b5f7a",
+    "secondaryColor": "33384f",
+    "floorColor": "8a6b45",
+    "accentColor": "d4b35c",
+    "detailColor": "e8d6a0"
+  },
+  "eventLayout": {
+    "camera": { "x": 6, "y": 8 },
+    "farmer": { "x": 5, "y": 8, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 7, "y": 8, "facing": "left" },
+      { "slot": "speaker_2", "x": 8, "y": 8, "facing": "left" },
+      { "slot": "speaker_3", "x": 6, "y": 7, "facing": "down" },
+      { "slot": "speaker_4", "x": 9, "y": 7, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.39, "y": 0.55, "scale": 1.05, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.56, "y": 0.55, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.48, "y": 0.42, "scale": 0.9, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.68, "y": 0.43, "scale": 0.88, "facing": "down" }
+  ]
+}

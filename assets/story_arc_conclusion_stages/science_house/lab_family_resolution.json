@@ -1,0 +1,36 @@
+{
+  "stageId": "science_house/lab_family_resolution",
+  "title": "Mountain House Lab",
+  "location": "ScienceHouse",
+  "sceneTypes": ["family", "truth", "practical", "reconciliation"],
+  "allowedArcTags": ["family", "science", "truth", "repair", "trust", "practical", "reconciliation"],
+  "blockedArcTags": [],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "summer1",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "workshop",
+    "primaryColor": "3f5868",
+    "secondaryColor": "273846",
+    "floorColor": "6f644e",
+    "accentColor": "89a6b8",
+    "detailColor": "d8c58a"
+  },
+  "eventLayout": {
+    "camera": { "x": 8, "y": 18 },
+    "farmer": { "x": 7, "y": 18, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 9, "y": 18, "facing": "left" },
+      { "slot": "speaker_2", "x": 10, "y": 18, "facing": "left" },
+      { "slot": "speaker_3", "x": 8, "y": 17, "facing": "down" },
+      { "slot": "speaker_4", "x": 11, "y": 17, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.38, "y": 0.54, "scale": 1.05, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.55, "y": 0.54, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.46, "y": 0.42, "scale": 0.92, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.67, "y": 0.43, "scale": 0.88, "facing": "down" }
+  ]
+}

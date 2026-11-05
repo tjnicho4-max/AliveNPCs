@@ -1,0 +1,34 @@
+{
+  "stageId": "beach/evening_reflection",
+  "title": "Beach Evening",
+  "location": "Beach",
+  "sceneTypes": ["reflection", "romance_light", "reconciliation"],
+  "allowedArcTags": ["romance", "reflection", "trust", "love", "reconciliation"],
+  "blockedArcTags": ["community"],
+  "minSpeakers": 1,
+  "maxSpeakers": 3,
+  "preferredMusic": "wedding",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "beach",
+    "primaryColor": "3f6b85",
+    "secondaryColor": "22465c",
+    "floorColor": "c7a96a",
+    "accentColor": "e2bd74",
+    "detailColor": "f4dca0"
+  },
+  "eventLayout": {
+    "camera": { "x": 39, "y": 34 },
+    "farmer": { "x": 38, "y": 34, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 40, "y": 34, "facing": "left" },
+      { "slot": "speaker_2", "x": 41, "y": 34, "facing": "left" },
+      { "slot": "speaker_3", "x": 39, "y": 33, "facing": "down" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.40, "y": 0.55, "scale": 1.08, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.56, "y": 0.55, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.49, "y": 0.43, "scale": 0.9, "facing": "down" }
+  ]
+}

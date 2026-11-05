@@ -1,0 +1,36 @@
+{
+  "stageId": "hospital/clinic_care_resolution",
+  "title": "Clinic Room",
+  "location": "Hospital",
+  "sceneTypes": ["care", "practical", "support", "reconciliation"],
+  "allowedArcTags": ["care", "health", "support", "practical", "trust", "reconciliation"],
+  "blockedArcTags": [],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "sadpiano",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "clinic",
+    "primaryColor": "d7e5df",
+    "secondaryColor": "9fbeb8",
+    "floorColor": "6f8a86",
+    "accentColor": "6aa6a8",
+    "detailColor": "f4f0d8"
+  },
+  "eventLayout": {
+    "camera": { "x": 10, "y": 15 },
+    "farmer": { "x": 9, "y": 15, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 11, "y": 15, "facing": "left" },
+      { "slot": "speaker_2", "x": 12, "y": 15, "facing": "left" },
+      { "slot": "speaker_3", "x": 10, "y": 14, "facing": "down" },
+      { "slot": "speaker_4", "x": 13, "y": 14, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.38, "y": 0.54, "scale": 1.05, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.55, "y": 0.54, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.46, "y": 0.42, "scale": 0.92, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.67, "y": 0.43, "scale": 0.88, "facing": "down" }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "stageId": "trailer/kitchen_honest_pause",
+  "title": "Trailer Kitchen",
+  "location": "Trailer",
+  "sceneTypes": ["family", "confession", "support", "reconciliation"],
+  "allowedArcTags": ["family", "confession", "support", "trust", "home", "reconciliation"],
+  "blockedArcTags": ["public"],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "sadpiano",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "small_home",
+    "primaryColor": "65533b",
+    "secondaryColor": "332a20",
+    "floorColor": "7b6245",
+    "accentColor": "c7954d",
+    "detailColor": "dbc18a"
+  },
+  "eventLayout": {
+    "camera": { "x": 5, "y": 5 },
+    "farmer": { "x": 4, "y": 5, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 6, "y": 5, "facing": "left" },
+      { "slot": "speaker_2", "x": 7, "y": 5, "facing": "left" },
+      { "slot": "speaker_3", "x": 5, "y": 4, "facing": "down" },
+      { "slot": "speaker_4", "x": 8, "y": 4, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.40, "y": 0.54, "scale": 1.05, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.57, "y": 0.54, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.49, "y": 0.42, "scale": 0.9, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.68, "y": 0.43, "scale": 0.88, "facing": "down" }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "stageId": "saloon/back_table_reconciliation",
+  "title": "Saloon Back Table",
+  "location": "Saloon",
+  "sceneTypes": ["reconciliation", "conflict", "family"],
+  "allowedArcTags": ["trust", "apology", "friendship", "family", "reconciliation"],
+  "blockedArcTags": ["romance_high_intensity"],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "sadpiano",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "saloon",
+    "primaryColor": "5a3822",
+    "secondaryColor": "2b2118",
+    "floorColor": "704a2c",
+    "accentColor": "c58a3a",
+    "detailColor": "e0c276"
+  },
+  "eventLayout": {
+    "camera": { "x": 10, "y": 18 },
+    "farmer": { "x": 9, "y": 18, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 11, "y": 18, "facing": "left" },
+      { "slot": "speaker_2", "x": 12, "y": 18, "facing": "left" },
+      { "slot": "speaker_3", "x": 10, "y": 19, "facing": "down" },
+      { "slot": "speaker_4", "x": 13, "y": 19, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.38, "y": 0.54, "scale": 1.05, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.55, "y": 0.54, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.46, "y": 0.42, "scale": 0.92, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.67, "y": 0.43, "scale": 0.88, "facing": "down" }
+  ]
+}

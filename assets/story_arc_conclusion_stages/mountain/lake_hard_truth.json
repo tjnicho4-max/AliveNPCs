@@ -1,0 +1,34 @@
+{
+  "stageId": "mountain/lake_hard_truth",
+  "title": "Mountain Lake",
+  "location": "Mountain",
+  "sceneTypes": ["truth", "conflict", "reflection"],
+  "allowedArcTags": ["truth", "conflict", "accountability", "reflection", "trust"],
+  "blockedArcTags": [],
+  "minSpeakers": 1,
+  "maxSpeakers": 3,
+  "preferredMusic": "summer1",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "mountain",
+    "primaryColor": "42576e",
+    "secondaryColor": "263545",
+    "floorColor": "607044",
+    "accentColor": "6a9ab0",
+    "detailColor": "b8c58c"
+  },
+  "eventLayout": {
+    "camera": { "x": 34, "y": 15 },
+    "farmer": { "x": 33, "y": 15, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 35, "y": 15, "facing": "left" },
+      { "slot": "speaker_2", "x": 36, "y": 15, "facing": "left" },
+      { "slot": "speaker_3", "x": 34, "y": 14, "facing": "down" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.40, "y": 0.54, "scale": 1.06, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.57, "y": 0.54, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.49, "y": 0.42, "scale": 0.9, "facing": "down" }
+  ]
+}

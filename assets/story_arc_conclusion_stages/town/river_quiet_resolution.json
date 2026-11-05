@@ -1,0 +1,36 @@
+{
+  "stageId": "town/river_quiet_resolution",
+  "title": "Town River",
+  "location": "Town",
+  "sceneTypes": ["reconciliation", "friendship", "reflection"],
+  "allowedArcTags": ["trust", "friendship", "reconciliation", "reflection", "support"],
+  "blockedArcTags": [],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "spring_day",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "river",
+    "primaryColor": "496b42",
+    "secondaryColor": "274f64",
+    "floorColor": "a97943",
+    "accentColor": "7db2c9",
+    "detailColor": "d8d1a2"
+  },
+  "eventLayout": {
+    "camera": { "x": 52, "y": 61 },
+    "farmer": { "x": 51, "y": 61, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 53, "y": 61, "facing": "left" },
+      { "slot": "speaker_2", "x": 54, "y": 61, "facing": "left" },
+      { "slot": "speaker_3", "x": 52, "y": 60, "facing": "down" },
+      { "slot": "speaker_4", "x": 55, "y": 60, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.36, "y": 0.55, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.52, "y": 0.55, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.65, "y": 0.44, "scale": 0.9, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.24, "y": 0.44, "scale": 0.86, "facing": "down" }
+  ]
+}

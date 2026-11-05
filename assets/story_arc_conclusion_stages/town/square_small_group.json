@@ -1,0 +1,36 @@
+{
+  "stageId": "town/square_small_group",
+  "title": "Town Square",
+  "location": "Town",
+  "sceneTypes": ["community", "public", "reconciliation"],
+  "allowedArcTags": ["community", "public", "friendship", "trust", "village"],
+  "blockedArcTags": ["private_secret"],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "spring_day",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "town",
+    "primaryColor": "5f7d48",
+    "secondaryColor": "3e5d38",
+    "floorColor": "a16f43",
+    "accentColor": "d0b56d",
+    "detailColor": "efe0a0"
+  },
+  "eventLayout": {
+    "camera": { "x": 40, "y": 60 },
+    "farmer": { "x": 39, "y": 60, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 41, "y": 60, "facing": "left" },
+      { "slot": "speaker_2", "x": 42, "y": 60, "facing": "left" },
+      { "slot": "speaker_3", "x": 40, "y": 59, "facing": "down" },
+      { "slot": "speaker_4", "x": 43, "y": 59, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.40, "y": 0.53, "scale": 1.05, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.56, "y": 0.53, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.48, "y": 0.41, "scale": 0.92, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.68, "y": 0.42, "scale": 0.88, "facing": "down" }
+  ]
+}

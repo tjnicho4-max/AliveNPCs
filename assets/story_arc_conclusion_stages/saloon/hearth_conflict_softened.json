@@ -1,0 +1,34 @@
+{
+  "stageId": "saloon/hearth_conflict_softened",
+  "title": "Saloon Hearth",
+  "location": "Saloon",
+  "sceneTypes": ["conflict", "truth", "reconciliation"],
+  "allowedArcTags": ["conflict", "truth", "accountability", "reconciliation", "trust"],
+  "blockedArcTags": [],
+  "minSpeakers": 1,
+  "maxSpeakers": 3,
+  "preferredMusic": "sadpiano",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "hearth",
+    "primaryColor": "4a2f21",
+    "secondaryColor": "241a16",
+    "floorColor": "6a4428",
+    "accentColor": "d0712a",
+    "detailColor": "f2c26a"
+  },
+  "eventLayout": {
+    "camera": { "x": 10, "y": 18 },
+    "farmer": { "x": 9, "y": 18, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 11, "y": 18, "facing": "left" },
+      { "slot": "speaker_2", "x": 12, "y": 18, "facing": "left" },
+      { "slot": "speaker_3", "x": 10, "y": 19, "facing": "down" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.42, "y": 0.52, "scale": 1.08, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.58, "y": 0.52, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.50, "y": 0.40, "scale": 0.9, "facing": "down" }
+  ]
+}

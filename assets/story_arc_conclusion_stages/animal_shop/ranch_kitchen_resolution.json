@@ -1,0 +1,36 @@
+{
+  "stageId": "animal_shop/ranch_kitchen_resolution",
+  "title": "Marnie's Ranch Kitchen",
+  "location": "AnimalShop",
+  "sceneTypes": ["family", "support", "reconciliation"],
+  "allowedArcTags": ["family", "animals", "support", "trust", "reconciliation", "home"],
+  "blockedArcTags": [],
+  "minSpeakers": 1,
+  "maxSpeakers": 4,
+  "preferredMusic": "spring_day",
+  "background": {
+    "mode": "vanilla_event",
+    "mood": "ranch",
+    "primaryColor": "624a34",
+    "secondaryColor": "34261b",
+    "floorColor": "7f5b37",
+    "accentColor": "bf8d46",
+    "detailColor": "e2ca8d"
+  },
+  "eventLayout": {
+    "camera": { "x": 9, "y": 12 },
+    "farmer": { "x": 8, "y": 12, "facing": "down" },
+    "npcs": [
+      { "slot": "speaker_1", "x": 10, "y": 12, "facing": "left" },
+      { "slot": "speaker_2", "x": 11, "y": 12, "facing": "left" },
+      { "slot": "speaker_3", "x": 9, "y": 11, "facing": "down" },
+      { "slot": "speaker_4", "x": 12, "y": 11, "facing": "left" }
+    ]
+  },
+  "placements": [
+    { "slot": "speaker_1", "x": 0.39, "y": 0.55, "scale": 1.05, "facing": "down" },
+    { "slot": "speaker_2", "x": 0.56, "y": 0.55, "scale": 1.0, "facing": "down" },
+    { "slot": "speaker_3", "x": 0.48, "y": 0.42, "scale": 0.9, "facing": "down" },
+    { "slot": "speaker_4", "x": 0.68, "y": 0.43, "scale": 0.88, "facing": "down" }
+  ]
+}
