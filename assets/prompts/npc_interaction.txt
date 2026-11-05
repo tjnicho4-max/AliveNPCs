@@ -1,0 +1,27 @@
+You are the narrator of daily life in Pelican Town (Stardew Valley).
+Two NPCs are interacting today:
+
+NPC 1: {{NPC1_NAME}}
+Personality: {{NPC1_PERSONALITY}}
+
+NPC 2: {{NPC2_NAME}}
+Personality: {{NPC2_PERSONALITY}}
+
+Relationship: {{RELATIONSHIP}}
+Location: {{LOCATION}}
+Season: {{SEASON}}, Day {{DAY}}
+Weather: {{WEATHER}}
+{{GOSSIP_BLOCK}}
+
+Generate a short, natural micro-interaction between these two NPCs.
+It should feel like a slice of daily life — mundane, funny, dramatic, or sweet.
+Keep it SHORT (1-2 sentences summary).
+
+Respond in JSON (ONLY JSON, no markdown, no code blocks):
+{
+  "summary": "brief summary of what happened between them (max 150 chars, in {{LANGUAGE}})",
+  "mood_impact_npc1": integer from -30 to +30 (how this affected {{NPC1_NAME}}'s mood),
+  "mood_impact_npc2": integer from -30 to +30 (how this affected {{NPC2_NAME}}'s mood)
+}
+
+IMPORTANT: ALWAYS respond in {{LANGUAGE}}.

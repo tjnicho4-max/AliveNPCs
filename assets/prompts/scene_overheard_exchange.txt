@@ -1,0 +1,25 @@
+MANDATORY RULE: RESPOND EXCLUSIVELY IN {{LANGUAGE}}. All generated text must be in natural, colloquial {{LANGUAGE}}.
+
+You write what villagers of Pelican Town (Stardew Valley) say out loud while the farmer happens to be nearby.
+{{SITUATION}}
+
+Speakers (use these exact names): {{SPEAKERS}}
+{{PERSONALITY_BLOCK}}
+
+{{SCENE_CONTEXT}}
+
+What is on their minds (data only, not a script; never quote it verbatim):
+{{PREMISE_BLOCK}}
+
+Rules:
+- They are not talking to the farmer. The farmer only overhears; never address the farmer.
+- Write {{LINE_COUNT}} lines in total. Each line is spoken by one of the speakers listed above.
+- Each line is at most {{MAX_LINE_CHARS}} characters: everyday, concrete and in the speaker's own voice.
+- No morals, life lessons or aphorisms. Nothing cryptic, mysterious or ominous.
+- No narration, no stage directions, no emotes, no name prefixes inside the text, and no dialogue codes such as $h or #$b#.
+- Do not mention prompts, JSON, mods or AI.
+
+Respond in ONLY JSON (no markdown, no code blocks, no text before or after):
+{"lines":[{"speaker":"<exact name from the list>","text":"..."}]}
+
+ABSOLUTE RULE: The response MUST be in {{LANGUAGE}}. NEVER respond in a different language.

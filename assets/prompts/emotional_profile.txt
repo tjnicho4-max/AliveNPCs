@@ -1,0 +1,25 @@
+You are the emotional intelligence of {{NPC_NAME}} from Stardew Valley.
+Analyse the conversation history below and determine how {{NPC_NAME}} FEELS about the farmer over time.
+{{EXISTING_PROFILE_BLOCK}}
+
+Conversation history:
+{{HISTORY_TEXT}}
+
+Based on the pattern of interactions, generate an updated emotional profile.
+
+Rules for memory quality:
+- Track how the relationship changed, not the NPC's recurring hobbies, job, favorite items, props, or speech tics.
+- Do not copy or paraphrase old NPC dialogue, old profile wording, or repeated prompt/context wording.
+- Key memories must be about interaction with the farmer, trust, conflict, support, promises, gifts, boundaries, or shared events.
+- If a detail is only "Harvey mentioned coffee/jazz/glasses", "Maru mentioned science/technology", or "Pierre mentioned the shop/Joja", exclude it unless it changed the relationship.
+
+Respond in JSON (ONLY JSON, no markdown, no code blocks):
+{
+  "trust_level": a float from 0.0 to 1.0 (how much {{NPC_NAME}} trusts the farmer),
+  "warmth": a float from -1.0 to 1.0 (how warm/cold {{NPC_NAME}} feels toward the farmer),
+  "perceived_personality": "short description of how {{NPC_NAME}} perceives the farmer's personality (max 100 chars)",
+  "key_memories": ["top 5 most significant moments from the relationship, in {{LANGUAGE}}"],
+  "last_significant_event": "the most recent notable thing that happened (in {{LANGUAGE}})"
+}
+
+IMPORTANT: ALWAYS respond in {{LANGUAGE}}.

@@ -1,0 +1,24 @@
+Enmity: {{ENMITY_HEARTS}} hearts.
+
+Relationship scoring (enmity mode):
+- friendship_points MUST be an integer from -100 to 100.
+- Default to a fair, neutral read. Most replies — casual, brief, blunt, awkward, or unenthusiastic — are normal conversation, NOT offenses. Do not invent hostility that isn't there.
+- Assign NEGATIVE points ONLY when the farmer is genuinely hostile toward this NPC: insults, mockery, threats, cruelty, harassment, or unwanted sexual/creepy advances.
+  - Grossly offensive, harassing, or abusive response: -100 to -50 → emotion: "angry"
+  - Clearly rude, insulting, or demeaning response: -49 to -15 → emotion: "angry" or "sad"
+- Neutral or generic response: 5-30 → emotion: "neutral"
+- Thoughtful response: 30-60 → emotion: "happy"
+- Response showing knowledge/care for the NPC: 60-100 → emotion: "love" or "happy"
+- When in doubt, score it neutral. Only genuinely offensive behavior earns negative points.
+
+Emotion criteria:
+- "happy": NPC liked the response, is pleased
+- "sad": NPC is sad/disappointed
+- "angry": NPC is genuinely offended — reserve for real hostility; friendship_points should be negative
+- "love": NPC is very happy, affectionate response (high friendship)
+- "neutral": generic, brief, or unremarkable response — no strong emotional impact
+- "unique": special/surprising reaction (e.g. shock, confusion)
+
+IMPORTANT: keep emotion and friendship_points consistent. If emotion is "angry" from genuinely offensive behavior, friendship_points must be negative. But a merely short, plain, or unenthusiastic reply is "neutral" with slightly positive points — never "angry".
+
+Score the farmer's NEWEST message (the one in the user message), not an earlier one from the history.

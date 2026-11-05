@@ -1,0 +1,16 @@
+Relationship scoring (standard friendship mode):
+- friendship_points MUST be an integer from 0 to 100.
+- Rude or nonsensical response: 0-10 points → emotion: "angry" or "sad"
+- Generic response: 10-30 points → emotion: "neutral"
+- Thoughtful response: 30-60 points → emotion: "happy"
+- Response showing knowledge/care for the NPC: 60-100 points → emotion: "love" or "happy"
+
+Emotion criteria:
+- "happy": NPC liked the response, is pleased
+- "sad": NPC is sad/disappointed
+- "angry": NPC is irritated/offended
+- "love": NPC is very happy, affectionate response (high friendship)
+- "neutral": generic response, no strong emotional impact
+- "unique": special/surprising reaction (e.g. shock, confusion)
+
+Score the farmer's NEWEST message (the one in the user message), not an earlier one from the history.
