@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "parrot_night",
+  "priority": 20,
+  "localizedNames": {
+    "default": "Night of the Parrots",
+    "pt-BR": "Noite dos Papagaios",
+    "es": "Noche de los Loros",
+    "fr": "Nuit des Perroquets",
+    "it": "Notte dei Pappagalli",
+    "de": "Nacht der Papageien",
+    "vi": "Đêm của những chú vẹt"
+  },
+  "detection": {
+    "season": "",
+    "day": 0,
+    "matchAnyDate": true,
+    "locations": [
+      "IslandSouth"
+    ],
+    "eventNames": [],
+    "festivalDataMarkers": {
+      "Lucas.BeachEpisode/Id": "Lucas.BeachEpisode/ParrotNight"
+    }
+  },
+  "prompts": {
+    "main": "prompts/dialogue_system.txt",
+    "npcOverrides": {}
+  },
+  "gossip": {
+    "summary": {
+      "default": "The Night of the Parrots brought Ginger Island and the valley together under lantern light for music, tropical food, and the parrots' rhythm ceremony.",
+      "pt-BR": "A Noite dos Papagaios reuniu a Ilha Gengibre e o vale sob a luz das lanternas, entre música, comida tropical e a cerimônia rítmica dos papagaios.",
+      "es": "La Noche de los Loros reunió a Isla Jengibre y al valle bajo la luz de los faroles, entre música, comida tropical y la ceremonia rítmica de los loros.",
+      "fr": "La Nuit des Perroquets a réuni l'Île Gingembre et la vallée sous les lanternes, autour de la musique, de plats tropicaux et de la cérémonie rythmique des perroquets.",
+      "it": "La Notte dei Pappagalli ha riunito l'Isola Zenzero e la valle sotto le lanterne, tra musica, cibo tropicale e la cerimonia ritmica dei pappagalli.",
+      "de": "Die Nacht der Papageien brachte die Ingwerinsel und das Tal im Licht der Laternen zu Musik, tropischem Essen und der Rhythmuszeremonie der Papageien zusammen.",
+      "vi": "Đêm của những chú vẹt đã gắn kết Đảo Gừng và cả thung lũng dưới ánh đèn lồng, cùng âm nhạc, món ăn nhiệt đới và nghi lễ nhịp điệu của đàn vẹt."
+    },
+    "chatMessage": {
+      "default": "The valley is still talking about lanterns, music, and the parrots answering the shore.",
+      "pt-BR": "O vale ainda está falando das lanternas, da música e dos papagaios respondendo à praia.",
+      "es": "El valle todavía habla de los faroles, la música y los loros respondiendo a la costa.",
+      "fr": "La vallée parle encore des lanternes, de la musique et des perroquets répondant au rivage.",
+      "it": "La valle parla ancora delle lanterne, della musica e dei pappagalli che rispondevano alla riva.",
+      "de": "Das Tal spricht noch immer über die Laternen, die Musik und die Papageien, die dem Ufer antworteten.",
+      "vi": "Cả thung lũng vẫn đang nhắc đến những chiếc đèn lồng, âm nhạc và đàn vẹt đáp lời bờ biển."
+    },
+    "promptEligibilityDays": 2
+  }
+}

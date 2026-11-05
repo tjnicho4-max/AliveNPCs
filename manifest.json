@@ -1,0 +1,10 @@
+{
+    "Name": "AliveNpcs",
+    "Author": "Lucas Gatica",
+    "Version": "1.7.4",
+    "Description": "AI-powered NPC dialogue, evolving relationships, social dynamics, memories, gossip, letters, and emergent story arcs for Stardew Valley.",
+    "UniqueID": "Lucas.AliveNpcs",
+    "EntryDll": "AliveNpcs.dll",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": [ "Nexus:43475" ]
+}

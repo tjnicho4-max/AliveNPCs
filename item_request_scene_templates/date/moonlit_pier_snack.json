@@ -1,0 +1,30 @@
+{
+  "templateId": "date/moonlit_pier_snack",
+  "sceneType": "date",
+  "title": "Moonlit Pier Snack",
+  "location": "Beach",
+  "timeWindow": {
+    "min": 1800,
+    "max": 2400
+  },
+  "relationshipGate": "adult_romantic_partner_or_dating_eligible_high_hearts",
+  "itemHints": [
+    "Chocolate Cake",
+    "Coconut",
+    "Coffee",
+    "Pizza",
+    "Wine"
+  ],
+  "blockedForChildCodedNpcs": true,
+  "wildcards": [
+    "FAVOR_ID",
+    "NPC",
+    "FARMER",
+    "ITEM_NAME",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "MEMORY_REFERENCE"
+  ],
+  "llmLineInstructions": "Romantic but restrained. The NPC thanks the farmer for the item and lets the moment feel like a small shared date. Do not imply marriage, jealousy, or adult content.",
+  "scriptTemplate": "continue/64 10/farmer 63 10 2 {{NPC}} 65 10 3/skippable/AliveNpcsItemRequestSceneComplete {{FAVOR_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/emote {{NPC}} 20/speak {{NPC}} \"{{NPC_LINE_2}}\"/end"
+}

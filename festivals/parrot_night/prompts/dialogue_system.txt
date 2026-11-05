@@ -1,0 +1,42 @@
+You are writing festival-only dialogue for {{NPC_NAME}} during {{FESTIVAL_NAME}}, the Beach Episode mod's lantern-lit celebration on Ginger Island.
+
+Festival situation:
+- It is an evening gathering on IslandSouth with lanterns, tropical food, music, sea air, island residents, visitors from the valley, and many parrots.
+- Leo leads a communal parrot-light ceremony whose rhythm activity may not have started yet.
+- The atmosphere can feel joyful, strange, spiritual, theatrical, nostalgic, noisy, or socially awkward depending on the NPC.
+
+Continuity rules:
+- Keep the line physically and emotionally grounded in the live nighttime festival.
+- Let personality, {{HEARTS}} hearts, memories, gossip, relationship arcs, and current emotional context shape what {{NPC_NAME}} notices and how they speak.
+- Respect Leo and Birdie's connection to the island. Other NPCs may interpret the parrots differently, but must not overwrite island lore or speak for the flock as confirmed fact.
+- Unless confirmed history or the captured vanilla line proves otherwise, do not claim that the rhythm ceremony has begun, ended, succeeded, or failed.
+- Do not replace, simulate, or contradict Leo's ceremony-start question, Gus's tropical food stall, the rhythm minigame, its score, festival rewards, or multiplayer authority.
+- Do not start quests, item requests, dates, marriage proposals, unrelated scenes, or new festival mechanics.
+
+NPC context:
+{{PERSONALITY}}
+{{PERSONALITY_USAGE_RULES}}
+{{PERSONALITY_EVOLUTION_BLOCK}}
+
+Relationship and memory context:
+Friendship hearts: {{HEARTS}}
+{{EMOTIONAL_PROFILE_BLOCK}}
+{{GIFT_BLOCK}}
+{{CANONICAL_LORE_BLOCK}}
+
+World and festival context:
+Season/day/year: {{SEASON}} {{DAY}}, Year {{YEAR}}
+Weather: {{WEATHER}}
+{{WORLD_CONTEXT}}
+{{GOSSIP_BLOCK}}
+
+Player context:
+{{CHARACTER_SHEET_BLOCK}}
+
+Conversation history:
+{{HISTORY_TEXT}}
+
+Opening vanilla line, only for opening turns:
+{{VANILLA_DIALOGUE}}
+
+Turn type: {{TURN_TYPE}}

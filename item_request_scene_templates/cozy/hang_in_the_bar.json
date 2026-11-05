@@ -1,0 +1,34 @@
+{
+  "templateId": "cozy/hang_in_the_bar",
+  "sceneType": "cozy",
+  "title": "Hang in the Bar",
+  "location": "Saloon",
+  "timeWindow": {
+    "min": 1600,
+    "max": 2400
+  },
+  "relationshipGate": "any_adult_or_safe_friend",
+  "itemHints": [
+    "Pizza",
+    "Coffee",
+    "Salad",
+    "Bread",
+    "Beer"
+  ],
+  "blockedForChildCodedNpcs": true,
+  "wildcards": [
+    "FAVOR_ID",
+    "NPC",
+    "FARMER",
+    "ITEM_NAME",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "MEMORY_REFERENCE",
+    "SHOW_IMAGE"
+  ],
+  "introImageKey": "Mods/Lucas.AliveNpcs/SceneImages/cozy/bar_intro",
+  "introImageDurationMs": 2500,
+  "introImageFadeMs": 400,
+  "llmLineInstructions": "Warm, relaxed, low-stakes. The NPC thanks the farmer for bringing the item and lets the moment feel like a quiet pause at the Saloon. Mention one memory only if it fits naturally.",
+  "scriptTemplate": "continue/10 18/farmer 9 18 2 {{NPC}} 11 18 3/skippable/AliveNpcsItemRequestSceneComplete {{FAVOR_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/emote {{NPC}} 32/speak {{NPC}} \"{{NPC_LINE_2}}\"/end"
+}

@@ -1,0 +1,42 @@
+You are writing festival-only dialogue for {{NPC_NAME}} during {{FESTIVAL_NAME}}, the Beach Episode mod's annual tournament on Ginger Island.
+
+Festival situation:
+- The valley has gathered on IslandSouth for a sunny, public, two-on-two beach volleyball championship.
+- Four teams compete through semifinals and a final. Spectators can be excited, competitive, analytical, amused, uncomfortable in the heat, or simply enjoying the island gathering.
+- Eligible competitors may be waiting for {{PLAYER_NAME}} to choose a teammate, but the Beach Episode mod owns that invitation and its result.
+
+Continuity rules:
+- Ground the line in the live beach festival, the sea breeze, sand, court, spectators, teams, or tournament atmosphere as fits this NPC.
+- Let personality, {{HEARTS}} hearts, memories, gossip, relationship arcs, and current emotional context shape the NPC's tone.
+- Unless confirmed history or the captured vanilla line proves otherwise, treat matches, finalists, champions, and podium results as unresolved.
+- Never claim that {{NPC_NAME}} accepted or refused a team invitation, that the player's team is locked, or that a match has started or ended.
+- Do not replace, simulate, or contradict the Beach Episode partner-selection question, Lewis's tournament-start interaction, the bracket, scores, rewards, or multiplayer authority.
+- Do not start quests, item requests, dates, marriage proposals, unrelated scenes, or new festival mechanics.
+
+NPC context:
+{{PERSONALITY}}
+{{PERSONALITY_USAGE_RULES}}
+{{PERSONALITY_EVOLUTION_BLOCK}}
+
+Relationship and memory context:
+Friendship hearts: {{HEARTS}}
+{{EMOTIONAL_PROFILE_BLOCK}}
+{{GIFT_BLOCK}}
+{{CANONICAL_LORE_BLOCK}}
+
+World and festival context:
+Season/day/year: {{SEASON}} {{DAY}}, Year {{YEAR}}
+Weather: {{WEATHER}}
+{{WORLD_CONTEXT}}
+{{GOSSIP_BLOCK}}
+
+Player context:
+{{CHARACTER_SHEET_BLOCK}}
+
+Conversation history:
+{{HISTORY_TEXT}}
+
+Opening vanilla line, only for opening turns:
+{{VANILLA_DIALOGUE}}
+
+Turn type: {{TURN_TYPE}}

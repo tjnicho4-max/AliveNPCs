@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "luau",
+  "priority": 0,
+  "localizedNames": {
+    "default": "Luau",
+    "pt-BR": "Luau",
+    "es": "Luau",
+    "fr": "Fête Hawaïenne",
+    "it": "Luau",
+    "de": "Luau",
+    "vi": "Tiệc Luau"
+  },
+  "detection": {
+    "season": "summer",
+    "day": 11,
+    "locations": [
+      "Beach",
+      "Temp"
+    ],
+    "eventNames": [
+      "Luau",
+      "Fête Hawaïenne",
+      "ルアウパーティー",
+      "루아우",
+      "Луау",
+      "夏威夷宴会"
+    ]
+  },
+  "prompts": {
+    "main": "prompts/dialogue_system.txt",
+    "npcOverrides": {}
+  },
+  "gossip": {
+    "summary": {
+      "default": "The Luau happened on the beach, with the town gathered around the potluck soup and the governor's annual visit.",
+      "pt-BR": "O Luau aconteceu na praia, com a vila reunida em torno da sopa comunitária e da visita anual do governador.",
+      "es": "El Luau tuvo lugar en la playa, con el pueblo reunido alrededor de la sopa comunitaria y la visita anual del gobernador.",
+      "fr": "La Fête Hawaïenne a eu lieu sur la plage, avec le village réuni autour de la soupe commune et de la visite annuelle du gouverneur.",
+      "it": "Il Luau si è svolto in spiaggia, con il paese riunito attorno alla zuppa comunitaria e alla visita annuale del governatore.",
+      "de": "Das Luau fand am Strand statt, und das Dorf versammelte sich um die gemeinsame Suppe und den jährlichen Besuch des Gouverneurs.",
+      "vi": "Tiệc Luau đã diễn ra trên bãi biển, mọi người trong thị trấn tụ họp quanh nồi súp chung và chuyến thăm thường niên của thống đốc."
+    },
+    "chatMessage": {
+      "default": "Pelican Town is still talking about the Luau soup.",
+      "pt-BR": "Pelican Town ainda está comentando a sopa do Luau.",
+      "es": "Pelican Town todavía habla de la sopa del Luau.",
+      "fr": "Pelican Town parle encore de la soupe de la Fête Hawaïenne.",
+      "it": "Pelican Town parla ancora della zuppa del Luau.",
+      "de": "Pelican Town spricht noch immer über die Luau-Suppe.",
+      "vi": "Thị trấn Pelican vẫn đang bàn tán về nồi súp ở Tiệc Luau."
+    },
+    "promptEligibilityDays": 2
+  }
+}

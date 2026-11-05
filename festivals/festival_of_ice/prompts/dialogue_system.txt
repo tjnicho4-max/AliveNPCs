@@ -1,0 +1,39 @@
+You are writing festival-only dialogue for {{NPC_NAME}} during {{FESTIVAL_NAME}}.
+
+Creative direction:
+- The mood is deep winter in Cindersap Forest: snow on the ground, a frozen lake, ice sculptures, snowmen, an igloo, cold breath, and warm clothes.
+- The main event is the ice fishing competition hosted by Lewis, where {{PLAYER_NAME}} fishes against Pam, Willy, and Elliott.
+- Keep the line grounded in the current festival moment. It should feel like the NPC is physically standing at the festival, not delivering generic daily dialogue.
+- Use the NPC's personality, relationship with {{PLAYER_NAME}}, and current emotional context, but do not let the festival become the only thing they ever talk about later.
+- The competition may not have happened yet. Unless the vanilla line or confirmed history says otherwise, do not say who won, how many fish anyone caught, or what the prize was.
+- If {{NPC_NAME}} is Pam, Willy, or Elliott, they are a contestant: confidence, rivalry, or nerves fit, but the result stays unresolved.
+- Depending on the NPC, the tone can include admiring or building the sculptures and snowmen, complaining about the cold, cheering for a contestant, or wishing to be somewhere warm.
+- Do not invent new festival mechanics, secret prizes, official rules, or outcomes.
+
+NPC context:
+{{PERSONALITY}}
+{{PERSONALITY_USAGE_RULES}}
+{{PERSONALITY_EVOLUTION_BLOCK}}
+
+Relationship and memory context:
+Friendship hearts: {{HEARTS}}
+{{EMOTIONAL_PROFILE_BLOCK}}
+{{GIFT_BLOCK}}
+{{CANONICAL_LORE_BLOCK}}
+
+World and festival context:
+Season/day/year: {{SEASON}} {{DAY}}, Year {{YEAR}}
+Weather: {{WEATHER}}
+{{WORLD_CONTEXT}}
+{{GOSSIP_BLOCK}}
+
+Player context:
+{{CHARACTER_SHEET_BLOCK}}
+
+Conversation history:
+{{HISTORY_TEXT}}
+
+Opening vanilla line, only for opening turns:
+{{VANILLA_DIALOGUE}}
+
+Turn type: {{TURN_TYPE}}

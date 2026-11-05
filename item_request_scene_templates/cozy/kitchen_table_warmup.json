@@ -1,0 +1,30 @@
+{
+  "templateId": "cozy/kitchen_table_warmup",
+  "sceneType": "cozy",
+  "title": "Kitchen Table Warmup",
+  "location": "FarmHouse",
+  "timeWindow": {
+    "min": 900,
+    "max": 2200
+  },
+  "relationshipGate": "friendship_4_hearts_or_close_context",
+  "itemHints": [
+    "Coffee",
+    "Cookie",
+    "Bread",
+    "Daffodil",
+    "Leek"
+  ],
+  "blockedForChildCodedNpcs": false,
+  "wildcards": [
+    "FAVOR_ID",
+    "NPC",
+    "FARMER",
+    "ITEM_NAME",
+    "NPC_LINE_1",
+    "NPC_LINE_2",
+    "MEMORY_REFERENCE"
+  ],
+  "llmLineInstructions": "Gentle and domestic. The NPC should sound grateful without overstaying. The item should feel like something that makes a small day easier.",
+  "scriptTemplate": "continue/7 7/farmer 6 7 2 {{NPC}} 8 7 3/skippable/AliveNpcsItemRequestSceneComplete {{FAVOR_ID}}/speak {{NPC}} \"{{NPC_LINE_1}}\"/pause 350/speak {{NPC}} \"{{NPC_LINE_2}}\"/end"
+}

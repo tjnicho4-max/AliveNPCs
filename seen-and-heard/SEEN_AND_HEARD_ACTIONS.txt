@@ -1,0 +1,268 @@
+SEEN AND HEARD — AÇÕES PERCEBIDAS ATUALMENTE
+==============================================
+
+Sensores ativos no AliveNpcs
+----------------------------
+
+1. Dar presente (`gift`)
+   O recebedor participa diretamente; outros NPCs próximos também podem
+   testemunhar. A memória inclui item, reação de gosto e aniversário quando
+   essas informações estão disponíveis.
+
+2. Comer ou beber (`consume` / `consumption`)
+   Capturado ao terminar de consumir um item. A memória inclui o nome do item
+   e distingue comida, bebida e álcool quando possível.
+
+3. Causar explosão (`bomb` / `explosion`)
+   Capturado por explosões no mapa. NPCs podem ouvir mesmo sem linha de visão,
+   conforme o alcance configurado no catálogo.
+
+4. Seguir um NPC por trás (`follow_npc`)
+   Conta somente enquanto jogador e NPC estão andando, o jogador permanece no
+   cone atrás do NPC e a distância é de até 6 tiles. Curvas e pausas de até 1,5
+   segundo não zeram o progresso. Após 3 segundos o NPC
+   mostra `!`; mantendo a perseguição por mais 3 segundos, ele salta, vira-se,
+   persegue o jogador e gera uma bronca curta com IA para mandar parar de
+   segui-lo. Há cooldown de 60 segundos por NPC para evitar repetição abusiva.
+
+5. Pescar perto de um NPC (`fishing`)
+   Enquanto o jogador estiver pescando, o sensor continua observando o raio de
+   12 tiles. Assim, uma testemunha que chegar depois do início também pode
+   procurar um ponto seguro na mesma margem e pescar junto. Cada NPC recebe no
+   máximo uma tentativa por sessão de pesca. O NPC captura 1 ou 2 peixes,
+   aproxima-se do jogador para entregar o que pescou, diz "Até mais!" em um
+   balão sobre a cabeça e então retoma sua posição e rota originais. A atividade
+   ocorre no máximo uma vez por dia para cada NPC. A chance de iniciar pode ser
+   ajustada entre 0% e 100% nas configurações (padrão: 10%). O ponto de pesca
+   deve estar visível na tela e ter uma rota livre, sem ocupar o jogador.
+
+6. Revirar lixo (`trash`)
+   Capturado quando o jogador realmente vasculha uma lixeira (não conta a
+   lixeira já revirada no dia). A memória indica de quem é a lixeira quando
+   ela é uma das lixeiras conhecidas da cidade. Alcance: 8 tiles.
+
+7. Acertar ou quase acertar um NPC com ferramenta ou arma
+   (`tool_hit` / `tool_near_miss`)
+   Machado, picareta e enxada contam quando atingem o tile do NPC (o regador
+   tem evento próprio, `water_npc`, logo abaixo);
+   machado e picareta também contam como "quase" quando o golpe cai a até 1,5
+   tile dele. Armas usam a área real do golpe; a foice só conta se acertar.
+   O acerto tem cooldown de 30 segundos por NPC e o "quase" é lembrado no
+   máximo uma vez por dia por NPC.
+
+   Regar um NPC (`water_npc`)
+   O regador com água molhando qualquer tile onde o NPC esteja, inclusive
+   todos os quadradinhos do regador carregado. O NPC molhado vem perguntar
+   por que o jogador fez isso: fora do verão fica incomodado (no inverno,
+   mais ainda); no verão, conforme a personalidade, acha graça ou até gosta
+   do refresco. Quem só viu de longe acha graça e lembra. Cooldown de 30
+   segundos por NPC.
+
+8. Acertar ou quase acertar um NPC com o estilingue
+   (`slingshot_hit` / `slingshot_near_miss`)
+   O acerto vem da colisão real do projétil com o NPC. Um projétil que bate em
+   outra coisa a até 2 tiles de um NPC conta como "quase" (uma vez por dia por
+   NPC).
+
+9. Porta de quarto (`room_locked` / `room_unlocked`)
+   `room_locked`: o jogador tentou abrir a porta de um quarto sem ter 2
+   corações com o dono (no máximo uma vez por minuto por porta).
+   `room_unlocked`: a primeira vez que o jogador abre aquela porta.
+
+10. Comprar em loja (`purchase`)
+    Tudo o que foi comprado em uma visita vira um único fato ("20× Cerveja e
+    Salada"), registrado ao fechar a loja. O dono da loja, se estiver no mapa,
+    participa diretamente. Só memória: ninguém anda até o jogador por isso.
+    Cômodas, catálogos de mobília e itens gratuitos são ignorados.
+
+11. Pedido de namoro ou casamento (`dating_proposal` / `marriage_proposal`)
+    Buquê e pingente de sereia, e também os pedidos feitos pelo diálogo com IA.
+    A memória guarda se o NPC aceitou ou recusou. Quem recebeu o pedido não
+    faz a abordagem (já está conversando); as testemunhas podem fazer, e quem
+    namora ou é casado com o jogador é orientado a confrontá-lo.
+
+12. Desmaiar fora de casa (`sleep_outside`)
+    Às 2h ou por exaustão, fora da casa da fazenda. Só memória: o dia termina
+    em seguida, e quem viu pode comentar nos dias seguintes.
+
+13. Passar ferido ou exausto por um amigo (`hurt`)
+    Vida ou energia em 30% ou menos, com um NPC a até 8 tiles. Com 4 corações
+    ou mais, o NPC anda até o jogador, comenta com IA e entrega uma comida
+    (cada NPC conhecido tem a sua; os demais dão um lanche simples). Limite de
+    1 ajuda por dia no total. Com 2 ou 3 corações o NPC só comenta, também no
+    máximo uma vez por dia. O limite só conta quando o NPC realmente chegou e
+    falou; se a abordagem falhar, há até 3 tentativas por dia, com 1 minuto
+    de intervalo.
+
+14. Entrar no quarto de alguém (`room`)
+    Os quartos são descobertos pelas portas "Door <donos>" do mapa. Entrar
+    registra a memória na hora (quem mora ali e está presente sabe na hora);
+    ao sair depois de 10 minutos ou mais, a mesma memória ganha a duração, e
+    uma visita de 30 minutos ou mais pesa mais. À noite, ou com o dono no
+    quarto, também pesa mais. Com 2 corações ou mais com o dono, a visita é de
+    amigo e não gera bronca.
+
+15. Entrar e sair de prédios, trocar de área (`place` / `map`)
+    Quem está perto da porta, dos dois lados, vê o jogador entrar ou sair; ao
+    entrar na casa de alguém, os moradores ficam registrados. Trocar de área
+    externa (cidade → montanha) usa `map`. Idas entre lugares do próprio
+    jogador e mudanças feitas por cutscene são ignoradas. Só memória.
+
+16. Conversar com alguém (`talk`)
+    Quem está a até 10 tiles vê o jogador conversando com um NPC (o próprio NPC
+    não conta como testemunha). Respostas ao mesmo NPC dentro de uma hora do
+    jogo são a mesma conversa. Trechos curtos do que foi dito só são guardados
+    se a conversa não foi marcada como segredo; em segredo, os outros só sabem
+    que vocês conversaram baixinho. Só memória; festivais não contam.
+
+17. Moradores chegando a um lugar (`npc_move`, opcional)
+    Desligado por padrão ("Moradores percebem quem chega" no GMCM). Ligado,
+    moradores em ambientes fechados lembram de outros moradores chegando onde
+    eles estão, depois das 6h10. Não envolve o jogador; só memória.
+
+18. Gatilhos de content packs (`trigger:<pack>/<id>`)
+    Qualquer content pack do AliveNpcs pode trazer um `alive-trigger.json` com
+    gatilhos próprios: por condição do jogo (`When`) ou aplicados a um dos
+    eventos acima (`On`). O formato está em `ALIVE_TRIGGERS.md`.
+
+19. Mandar mensagem para quem está do lado (`phone_text`)
+    O jogador manda uma mensagem pelo Messenger (celular ou computador) para um
+    NPC que está a até 5 tiles, no mesmo lugar. O NPC sabe que está do lado e
+    reage a isso na resposta; quem está a até 10 tiles vê o jogador grudado no
+    celular (o NPC que recebeu não conta como testemunha). Pode divertir quem
+    viu o bastante para vir zoar. Detalhe: `device` (`phone` ou `computer`).
+
+20. Encarar um NPC (`stare`)
+    O jogador fica parado a até 2 tiles, de frente para um NPC, por uns 3
+    segundos, sem falar com ele. O NPC responde só com um balão de fala
+    ("Pq tá me encarando?"; a esposa/o marido: "me olhando assim eu fico
+    boba"), sem IA. Cooldown de 1 minuto por NPC. Detalhes: `seconds`,
+    `npcFacing`.
+
+21. Bloquear o caminho de um NPC (`block_path`)
+    O jogador fica parado no tile à frente de um NPC que o jogo marca como
+    bloqueado há mais de 2,5 segundos. Balão de fala pedindo passagem; só
+    vira confronto se virar costume. Detalhes: `seconds`, `indoors`.
+
+22. Beijar o cônjuge em público (`kiss`)
+    O primeiro beijo do dia no cônjuge fora da casa e da fazenda. O cônjuge
+    não conta como testemunha; quem viu comenta num balão (crianças: "Ecaaa").
+    Uma vez por dia. Detalhes: `spouse`, `location`, `indoors`.
+
+23. Nadar perto de moradores (`swim`)
+    O jogador nadando com moradores a até 8 tiles. Uma vez por lugar por
+    dia; balões de quem viu, mais calorosos de quem está na água junto.
+    Detalhes: `location`, `withNpcs`, `count`.
+
+24. Brigar numa conversa (`argue`)
+    Lido do que o mod já analisa em cada conversa: insulto nas palavras do
+    jogador, ou o NPC terminou irritado/magoado com amizade em queda. Quem
+    estava perto (até 8 tiles) viu a discussão; o NPC da conversa não conta
+    como testemunha. Uma por NPC por hora de jogo. Detalhes: `with`, `said`,
+    `insult`, `emotion`.
+
+25. Flertar na frente do par (`flirt`)
+    Lido da conversa: o jogador flerta com um NPC enquanto quem namora ou é
+    casado com o jogador está a até 10 tiles. O par (em `owners`) é o alvo;
+    primeiro um balão seco, depois confronto se insistir. O NPC paquerado não
+    conta como testemunha. Detalhes: `with`, `partner`, `owners`.
+
+26. Sentar na casa dos outros (`sit`)
+    O jogador senta num móvel dentro de uma casa de morador (lojas e salas
+    públicas não contam). Uma vez por casa por minuto. Detalhes: `owners`,
+    `place`, `ownerPresent`, `seat`.
+
+27. Usar TV, luz ou lareira dos outros (`use_appliance`)
+    Ligar a TV, acender/apagar luminárias ou mexer na lareira dentro de uma
+    casa de morador. Detalhes: `owners`, `place`, `ownerPresent`, `kind`
+    (`tv`, `lamp`, `fireplace`), `item`, `state`.
+
+28. Mexer nas coisas dos outros (`snoop`)
+    Abrir cômodas ou ler bilhetes, cartas e placas (`Message`, `Notes`,
+    `Letter`, `Dialogue`) dentro de uma casa de morador. Com o dono presente
+    pesa mais. Detalhes: `owners`, `place`, `ownerPresent`, `kind`, `item`.
+
+Balões de fala (Bubble)
+-----------------------
+
+Qualquer tipo do catálogo (e qualquer gatilho de content pack, pelo campo
+`Bubble`) pode ter um bloco `Bubble`: em vez de a testemunha vir até o jogador,
+ela mostra uma frase curta num balão sobre a cabeça (`showTextAboveHead`), com
+um emote, sem chamar a IA. As frases são chaves do i18n
+(`seenAndHeard.bubble.<tipo>.<grupo>.<n>`) escolhidas pelo que o NPC é para o
+jogador (`spouse`, `partner`, `friend`, `child`, `default`), com no máximo um
+NPC falando por evento, 15 segundos entre balões do mesmo NPC e um limite
+diário por NPC e tipo. `WalkUpFromLevel` diz a partir de que nível de
+sentimento o evento volta a mandar o NPC até o jogador; abaixo disso ele só
+vira memória e balão. `water_npc`, `tool_near_miss` e `slingshot_near_miss`
+agora são balão no nível 1. A opção "Balões de fala para coisas pequenas" no
+GMCM desliga tudo isso.
+
+Como a reação funciona
+----------------------
+
+- O fato primeiro é registrado como memória individual das testemunhas, com a
+  certeza de cada uma (1 a 5): quem estava do lado "viu claramente", quem
+  estava longe "acha que viu", e uma explosão é ouvida, não vista. As frases
+  vêm do catálogo (`event-types.json`) e são escritas do ponto de vista de
+  quem viu: o nome dele vira "você" e a casa dele vira "sua casa".
+- Cada tipo de memória some no seu ritmo (`HalfLifeDays`): uma explosão ou um
+  golpe são lembrados por semanas; passar por alguém, por um dia.
+- Quem vai até o jogador é decidido pelos sentimentos (`meters.json`):
+  confronto, diversão, carinho e amor. Cada memória enche os sentimentos da
+  testemunha conforme a gravidade, o papel dela (alvo, dono, parente ou só
+  quem passava) e o quanto ela viu; as regras do catálogo mudam isso por
+  personagem (o Shane acha graça de bebida, o Gus paga uma cerveja, a Penny se
+  irrita com criança por perto). Os sentimentos esvaziam com o tempo.
+- Ao passar um nível, o NPC mostra o balão do sentimento e vem falar, no tom
+  daquele nível: o primeiro é preocupado ou curioso, o terceiro é furioso.
+  Cada nível só é dito uma vez por dia e cada sentimento tem um limite diário
+  por NPC. O primeiro sentimento que um tipo de evento desperta em alguém é o
+  que ele continua despertando naquele dia.
+- Coisas pequenas sozinhas viram só memória; repetir na frente da mesma pessoa,
+  ou fazer algo grave, é o que faz alguém vir. Por exemplo: só os donos de uma
+  lixeira vêm reclamar de quem a revirou; comer comida comum não traz ninguém;
+  beber traz.
+- A raiva mais forte e o amor mais forte passam em parte para o dia seguinte.
+- Seguir alguém, passar ferido por um amigo e gatilhos de content packs com
+  `Reaction` ou `GiveItem` continuam pedindo a reação diretamente, sem passar
+  pelos sentimentos.
+- A fila escolhe no máximo um NPC por evento: o que está mais perto, sente mais
+  forte e cujo sentimento pesa mais. Os outros que passaram de nível guardam o
+  assunto e o trazem na próxima conversa com o jogador. Se o jogador falar com
+  um NPC que estava para vir, ele fala do assunto nessa conversa e não vem
+  depois. O NPC começa a caminhar enquanto a IA gera a fala em paralelo.
+- O NPC caminha até um tile seguro ao lado do jogador, sem teleporte. Se chegar
+  antes da IA terminar, espera ali e só abre o diálogo quando a fala estiver
+  pronta.
+- Durante a aproximação ele anda mais rápido e exibe um `!` acima da cabeça.
+  A velocidade original é restaurada ao chegar e a volta usa o ritmo normal.
+- A volta só começa depois do fim de toda a conversa, incluindo resposta do
+  jogador, múltiplos turnos e a reação final do NPC.
+- O NPC caminha até a posição que ocupava antes da abordagem e então recarrega
+  sua rota vanilla. Se o caminho falhar ou expirar, a posição/rota padrão é
+  restaurada por um fallback seguro.
+- Apenas um NPC aborda o jogador por vez. Pedidos têm deduplicação, limite,
+  cooldown, timeout e são cancelados com restauração em save, troca de dia,
+  evento, troca de mapa ou retorno ao título.
+
+Compatibilidade e dependências
+------------------------------
+
+- SpaceCore não é necessário. Presente reutiliza o hook existente do Alive;
+  compra usa o callback da própria loja; os demais sensores usam patches
+  Harmony isolados, cada um desativado sozinho se o método do jogo mudar.
+- NPCs já controlados por outro sistema (por exemplo, um companion do
+  PelicanCompanions) não são tomados pela feature. `ignoreScheduleToday` e
+  controllers externos fazem a abordagem ser recusada com segurança.
+- Falhas dos sensores ou da abordagem não interrompem a ação vanilla nem as
+  mecânicas anteriores do AliveNpcs.
+
+Teste
+-----
+
+- `alive_sh fire <evento> [npc] [chave=valor ...]` registra um evento como se o
+  sensor tivesse visto e explica quem testemunhou, o que cada um sentiu e quem
+  vem falar.
+- `alive_sh feelings [npc]` mostra os sentimentos de cada NPC hoje, o nível de
+  cada um e o quanto falta para o próximo.
